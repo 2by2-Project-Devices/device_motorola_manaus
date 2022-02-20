@@ -50,6 +50,8 @@ on post-fs
     # Sensors
     chown system system /sys/devices/virtual/touchscreen/primary/double_tap_enabled
     chown system system /sys/devices/virtual/touchscreen/primary/double_tap_pressed
+    chown system system /sys/devices/virtual/touchscreen/primary/udfps_enabled
+    chown system system /sys/devices/virtual/touchscreen/primary/udfps_pressed
 
 on late-init
     exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -r -d /vendor/lib/modules zram
