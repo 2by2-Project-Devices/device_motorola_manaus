@@ -153,6 +153,10 @@ PRODUCT_PACKAGES += \
     libkeystore-wifi-hidl \
     libkeystore-engine-wifi-hidl
 
+# Light
+PRODUCT_PACKAGES += \
+    android.hardware.lights-service.manaus
+
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
