@@ -121,6 +121,9 @@ ro.vendor.mtk_log_hide_gps=1
 # Gatekeeper
 ro.hardware.gatekeeper=trustonic
 
+# HWUI
+debug.hwui.skia_atrace_enabled=false
+
 # Keystore
 ro.hardware.kmsetkey=trustonic
 
