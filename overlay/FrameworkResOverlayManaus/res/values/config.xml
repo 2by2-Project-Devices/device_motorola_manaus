@@ -249,8 +249,9 @@
          Note that a physical cutout should be configured in pixels for the best results. -->
     <string name="config_mainBuiltInDisplayCutout">M -35,0 L 35,0 L 35,105 L -35,105 Z</string>
 
-    <!-- Type of the single tap sensor. Empty if single tap is not supported. -->
-    <string name="config_dozeTapSensorType" translatable="false">org.lineageos.sensor.single_tap</string>
+    <!-- Type of the double tap sensor. Empty if double tap is not supported. -->
+    <string name="config_dozeTapSensorType" translatable="false">org.yaap.sensor.tap</string>
+    <string name="config_dozeDoubleTapSensorType" translatable="false">org.yaap.sensor.double_tap</string>
 
     <!-- Type of the udfps long press sensor. Empty if long press is not supported. -->
     <string name="config_dozeUdfpsLongPressSensorType" translatable="false">org.lineageos.sensor.udfps</string>
