@@ -11,6 +11,9 @@ on property:sys.boot_completed=1
     write /dev/cpuset/top-app/cpus 0-7
     write /dev/cpuset/restricted/cpus 0-3
 
+    # Adjust watermark level
+    write /proc/sys/vm/watermark_scale_factor 200
+
 ## Utilization Clamping
     # Tuning
     write /proc/sys/kernel/sched_util_clamp_min_rt_default 0
