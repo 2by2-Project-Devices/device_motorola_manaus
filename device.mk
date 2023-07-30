@@ -125,7 +125,8 @@ PRODUCT_COPY_FILES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    libshim_fp
+    libshim_fp \
+    android.hardware.biometrics.fingerprint@2.3-service.manaus
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
