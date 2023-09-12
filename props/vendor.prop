@@ -127,6 +127,9 @@ debug.hwui.skia_atrace_enabled=false
 # Keystore
 ro.hardware.kmsetkey=trustonic
 
+# LMK
+ro.lmk.swap_free_low_percentage=100
+
 # Media
 debug.stagefright.c2inputsurface=-1
 debug.stagefright.ccodec=4
