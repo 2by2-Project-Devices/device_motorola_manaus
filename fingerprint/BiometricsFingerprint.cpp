@@ -72,6 +72,7 @@ namespace implementation {
 BiometricsFingerprint::BiometricsFingerprint() {
     biometrics_2_1_service = IBiometricsFingerprint_2_1::getService();
     rbs_4_0_service = IBiometricsFingerprintRbs::getService();
+    mPerf = new BiometricsPerf();
 }
 
 Return<uint64_t> BiometricsFingerprint::setNotify(const sp<IBiometricsFingerprintClientCallback>& clientCallback) {
@@ -121,11 +122,12 @@ Return<bool> BiometricsFingerprint::isUdfps(uint32_t) {
 }
 
 Return<void> BiometricsFingerprint::onFingerDown(uint32_t, uint32_t, float, float) {
+    mPerf->enableBoost();
     setHbmState(ON);
     extraApiWrapper(101);
 
     std::thread([this]() {
-        std::this_thread::sleep_for(std::chrono::milliseconds(200));
+        std::this_thread::sleep_for(std::chrono::milliseconds(300));
         BiometricsFingerprint::onFingerUp();
     }).detach();
 
