@@ -21,6 +21,7 @@
 #include <vendor/egistec/hardware/fingerprint/4.0/IBiometricsFingerprintRbs.h>
 #include <hidl/MQDescriptor.h>
 #include <hidl/Status.h>
+#include "BiometricsPerf.h"
 
 namespace android {
 namespace hardware {
@@ -64,6 +65,7 @@ struct BiometricsFingerprint : public IBiometricsFingerprint {
 private:
     sp<IBiometricsFingerprint_2_1> biometrics_2_1_service;
     sp<IBiometricsFingerprintRbs> rbs_4_0_service;
+    BiometricsPerf *mPerf;
 };
 
 }  // namespace implementation

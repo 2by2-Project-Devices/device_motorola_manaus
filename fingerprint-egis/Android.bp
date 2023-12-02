@@ -7,10 +7,12 @@ cc_binary {
     srcs: [
         "service.cpp",
         "BiometricsFingerprint.cpp",
+        "BiometricsPerf.cpp",
     ],
     vendor: true,
     shared_libs: [
         "libbase",
+        "libbinder_ndk",
         "libhidlbase",
         "liblog",
         "libutils",
@@ -18,6 +20,8 @@ cc_binary {
         "android.hardware.biometrics.fingerprint@2.2",
         "android.hardware.biometrics.fingerprint@2.3",
         "vendor.egistec.hardware.fingerprint@4.0",
+        "android.hardware.power-V1-ndk",
+        "pixel-power-ext-V1-ndk",
     ],
     header_libs: ["generated_kernel_headers"]
 }
