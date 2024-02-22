@@ -133,6 +133,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.location.gps.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.location.gps.xml
 
+# IMS
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/configs/permissions/privapp-permissions-com.mediatek.ims.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-com.mediatek.ims.xml
+
 # Init
 PRODUCT_PACKAGES += \
     fstab.mt6879 \
@@ -187,7 +191,8 @@ PRODUCT_PACKAGES += \
     SettingsResOverlayManaus \
     TetheringConfigOverlay \
     WifiOverlay \
-    EuiccOverlay
+    EuiccOverlay \
+    TelephonyOverlayManaus
 
 # Power
 PRODUCT_PACKAGES += \
