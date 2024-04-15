@@ -122,6 +122,8 @@ ro.vendor.mtk_log_hide_gps=1
 ro.hardware.gatekeeper=trustonic
 
 # HWUI
+debug.hwui.use_hint_manager=true
+debug.hwui.target_cpu_time_percent=30
 debug.hwui.skia_atrace_enabled=false
 
 # Keystore
