@@ -130,6 +130,7 @@ debug.hwui.skia_atrace_enabled=false
 ro.hardware.kmsetkey=trustonic
 
 # LMK
+ro.lmk.kill_heaviest_task=true
 ro.lmk.filecache_min_kb=153600
 ro.lmk.swap_free_low_percentage=100
 
