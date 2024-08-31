@@ -152,6 +152,7 @@ PRODUCT_PACKAGES += \
     init.mmi.rc \
     init.mmi.usb.configfs.rc \
     init.modem.rc \
+    init.recovery.mt6879.rc \
     init.mt6879.rc \
     init.mt6879.usb.rc \
     init.mt6879.power.rc \
