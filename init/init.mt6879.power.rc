@@ -14,6 +14,10 @@ on property:sys.boot_completed=1
     # Adjust watermark level
     write /proc/sys/vm/watermark_scale_factor 200
 
+    # Boot time tuning
+    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor "performance"
+    write /sys/devices/system/cpu/cpu6/cpufreq/scaling_governor "performance"
+
 ## Utilization Clamping
     # Tuning
     write /proc/sys/kernel/sched_util_clamp_min_rt_default 0
@@ -64,6 +68,10 @@ on property:sys.boot_completed=1
     write /dev/cpuctl/foreground/cpu.uclamp.min 5
     write /dev/cpuctl/top-app/cpu.uclamp.max max
     write /dev/cpuctl/top-app/cpu.shares 20480
+
+    # End boot time tuning
+    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor "schedutil"
+    write /sys/devices/system/cpu/cpu6/cpufreq/scaling_governor "schedutil"
 
 service vendor.gralloc-4-0 /vendor/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek
     class hal animation
