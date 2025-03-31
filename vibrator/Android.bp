@@ -1,6 +1,7 @@
 Common_CFlags = ["-Wall"]
 Common_CFlags += ["-Werror"]
 
+<<<<<<< HEAD
 cc_library_shared {
     name: "vendor.qti.hardware.vibrator.impl.manaus",
     vendor: true,
@@ -29,12 +30,14 @@ cc_binary {
     cflags: Common_CFlags,
     srcs: [
         "service.cpp",
+        "Vibrator.cpp",
     ],
     shared_libs: [
         "libcutils",
         "libutils",
         "libbase",
         "libbinder_ndk",
+        "liblog",
         "android.hardware.vibrator-V1-ndk",
         "vendor.qti.hardware.vibrator.impl.manaus",
     ],
