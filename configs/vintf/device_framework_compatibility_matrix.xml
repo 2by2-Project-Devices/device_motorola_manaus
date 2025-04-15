@@ -52,13 +52,6 @@
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="aidl" optional="true">
-        <name>vendor.nxp.nxpnfc_aidl</name>
-        <interface>
-            <name>INxpNfc</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
     <!-- Touch -->
     <hal format="hidl" optional="true">
         <name>vendor.lineage.touch</name>
