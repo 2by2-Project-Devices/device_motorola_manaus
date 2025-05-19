@@ -164,5 +164,9 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/mediatek
 
+# Vibrator
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.vibrator.service.mediatek
+
 # Inherit the proprietary files
 $(call inherit-product, vendor/motorola/manaus/manaus-vendor.mk)
