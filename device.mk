@@ -33,6 +33,10 @@ AB_OTA_POSTINSTALL_CONFIG += \
     POSTINSTALL_OPTIONAL_vendor=true
 
 PRODUCT_PACKAGES += \
+    create_pl_dev \
+    create_pl_dev.recovery
+
+PRODUCT_PACKAGES += \
     checkpoint_gc \
     otapreopt_script
 
