@@ -41,7 +41,8 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/etc/init/android.hardware.media.c2@1.2-mediatek-64b.rc': blob_fixup()
         .regex_replace('mediatek', 'mediatek-64b'),
     'vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b': blob_fixup()
-        .add_needed('libstagefright_foundation-v33.so'),
+        .add_needed('libstagefright_foundation-v33.so')
+        .replace_needed('libavservices_minijail_vendor.so', 'libavservices_minijail.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
