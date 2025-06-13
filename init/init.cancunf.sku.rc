@@ -3,17 +3,20 @@
 on property:ro.boot.hardware.sku="XT2431-1"
     setprop bluetooth.device.default_name "moto g64 5G"
     setprop vendor.usb.product_string "moto g64 5G"
+    setprop persist.sys.2by2_processor_info "Mediatek Dimensity 7025"
 
 on property:ro.boot.hardware.sku="XT2431-2"
     setprop bluetooth.device.default_name "moto g64y 5G"
     setprop vendor.usb.product_string "moto g64y 5G"
     setprop persist.vendor.nfc.config_file_name "libnfc-nxp_220.conf"
     mount none /product/etc/felica_ymobile /product/etc/felica bind
+    setprop persist.sys.2by2_processor_info "Mediatek Dimensity 7025"
 
 on property:ro.boot.hardware.sku="XT2431-3"
     setprop bluetooth.device.default_name "moto g64 5G"
     setprop vendor.usb.product_string "moto g64 5G"
     setprop persist.vendor.nfc.config_file_name "libnfc-nxp_220.conf"
+    setprop persist.sys.2by2_processor_info "Mediatek Dimensity 7025"
 
 on init && property:ro.vendor.hw.esim="false"
     mount none /product/lost+found /product/etc/permissions/android.hardware.telephony.euicc.xml bind
