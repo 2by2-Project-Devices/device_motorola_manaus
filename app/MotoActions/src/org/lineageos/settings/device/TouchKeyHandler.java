@@ -78,6 +78,7 @@ public class TouchKeyHandler implements DeviceKeyHandler {
 
     private String mRearCameraId;
     private boolean mTorchEnabled;
+    private boolean mInPocket;
 
     private final BroadcastReceiver mUpdateReceiver = new BroadcastReceiver() {
         @Override
@@ -154,6 +155,11 @@ public class TouchKeyHandler implements DeviceKeyHandler {
         }
 
         return null;
+    }
+
+    @Override
+    public void onPocketStateChanged(boolean inPocket) {
+        mInPocket = inPocket;
     }
 
     private boolean hasSetupCompleted() {
