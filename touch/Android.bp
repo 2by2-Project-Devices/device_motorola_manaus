@@ -14,10 +14,10 @@
 // limitations under the License.
 
 cc_binary {
-    name: "vendor.lineage.touch@1.0-service.cancunf",
+    name: "vendor.lineage.touch@1.0-service.manaus",
     defaults: ["hidl_defaults"],
-    vintf_fragments: ["vendor.lineage.touch@1.0-service.cancunf.xml"],
-    init_rc: ["vendor.lineage.touch@1.0-service.cancunf.rc"],
+    vintf_fragments: ["vendor.lineage.touch@1.0-service.manaus.xml"],
+    init_rc: ["vendor.lineage.touch@1.0-service.manaus.rc"],
     relative_install_path: "hw",
     proprietary: true,
     srcs: [

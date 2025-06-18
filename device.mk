@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/motorola/cancunf
+DEVICE_PATH := device/motorola/manaus
 
 # Installs gsi keys into ramdisk, to boot a developer GSI with verified boot.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
@@ -72,6 +72,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/audio/audio_device.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_device.xml \
+    $(DEVICE_PATH)/configs/audio/audio_device_manaus_dvt1a.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_device_manaus_dvt1a.xml \
     $(DEVICE_PATH)/configs/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
     $(DEVICE_PATH)/configs/audio/audio_em.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_em.xml \
     $(DEVICE_PATH)/configs/audio/audio_policy.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy.conf \
@@ -135,17 +136,6 @@ PRODUCT_PACKAGES += \
     android.hardware.fastboot@1.1-impl-mock \
     fastbootd
 
-# Felica 
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/felica/retjp/common.cfg:$(TARGET_COPY_OUT_PRODUCT)/etc/felica/common.cfg \
-    $(LOCAL_PATH)/configs/felica/retjp/mfm.cfg:$(TARGET_COPY_OUT_PRODUCT)/etc/felica/mfm.cfg \
-    $(LOCAL_PATH)/configs/felica/retjp/mfs.cfg:$(TARGET_COPY_OUT_PRODUCT)/etc/felica/mfs.cfg
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/felica/ymobile/common.cfg:$(TARGET_COPY_OUT_PRODUCT)/etc/felica_ymobile/common.cfg \
-    $(LOCAL_PATH)/configs/felica/ymobile/mfm.cfg:$(TARGET_COPY_OUT_PRODUCT)/etc/felica_ymobile/mfm.cfg \
-    $(LOCAL_PATH)/configs/felica/ymobile/mfs.cfg:$(TARGET_COPY_OUT_PRODUCT)/etc/felica_ymobile/mfs.cfg
-
 # FM Radio
 PRODUCT_PACKAGES += \
     FMRadio
@@ -171,28 +161,29 @@ PRODUCT_COPY_FILES += \
 
 # Init
 PRODUCT_PACKAGES += \
-    fstab.mt6855 \
-    fstab.mt6855.ramdisk \
-    fstab.mt6855.vendor_ramdisk \
-    init_connectivity.rc \
+    fstab.mt6879 \
+    init.connectivity.rc \
     init.connectivity.common.rc \
-    init.cancunf.sku.rc \
+    init_conninfra.rc \
+    init.manaus.sku.rc \
     init.mmi.overlay.rc \
     init.mmi.rc \
+    init.mmi.usb.configfs.rc \
     init.modem.rc \
-    init.mt6855.rc \
-    init.mt6855.power.rc \
-    init.mt6855.usb.rc \
+    init.mt6879.rc \
+    init.mt6879.power.rc \
+    init.mt6879.usb.rc \
     init.mtkgki.rc \
     init.oem.hw.sh \
     init.project.rc \
-    init.recovery.mt6855.rc \
     init.sensor_2_0.rc \
-    ueventd.mt6855.rc
+    ueventd.mt6879.rc
+
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/init/fstab.mt6879:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.mt6879
 
 # Keylayouts
 PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,$(DEVICE_PATH)/configs/idc/,$(TARGET_COPY_OUT_VENDOR)/usr/idc) \
     $(call find-copy-subdir-files,*,$(DEVICE_PATH)/configs/keylayout/,$(TARGET_COPY_OUT_VENDOR)/usr/keylayout)
 
 # Keymaster / Keymint
@@ -209,7 +200,7 @@ PRODUCT_PACKAGES += \
 
 # Light
 PRODUCT_PACKAGES += \
-    android.hardware.lights-service.cancunf
+    android.hardware.lights-service.manaus
 
 # Media
 PRODUCT_COPY_FILES += \
@@ -269,34 +260,21 @@ $(foreach DEVICE_NFC_SKU, $(DEVICE_NFC_SKUS), \
 
 # Overlay
 PRODUCT_PACKAGES += \
-    BesLoudnessOverlayCancunf \
-    CarrierConfigOverlayCancunf \
-    EsimOverlayCancunf \
-    FrameworksResOverlayCancunf \
-    FrameworksResOverlayCancunfXT2343-1 \
-    FrameworksResOverlayCancunfXT2343-2 \
-    NfcResOverlayCancunf \
-    PowerOffAlarmOverlayCancunf \
-    SettingsOverlayCancunf \
-    SettingsProviderOverlayCancunf \
-    SettingsProviderOverlayCancunpXT2431-1 \
-    SettingsProviderOverlayCancunpXT2431-2 \
-    SettingsProviderOverlayCancunpXT2431-3 \
-    SystemUIOverlayCancunf \
-    TelephonyOverlayCancunf \
-    TetheringConfigResOverlayCancunf \
-    WifiResOverlayCancunf \
-    WifiResOverlayCancunpXT2431-1 \
-    WifiResOverlayCancunpXT2431-3
+    BesLoudnessOverlayManaus \
+    CarrierConfigOverlayManaus \
+    EsimOverlayManaus \
+    FrameworksResOverlayManaus \
+    NfcResOverlayManaus \
+    PowerOffAlarmOverlayManaus \
+    SettingsOverlayManaus \
+    SettingsProviderOverlayManaus \
+    SystemUIOverlayManaus \
+    TelephonyOverlayManaus \
+    TetheringConfigResOverlayManaus \
+    WifiResOverlayManaus
 
 PRODUCT_PACKAGES += \
-    RegulatoryOverlayXT2343-1 \
-    RegulatoryOverlayXT2343-2 \
-    RegulatoryOverlayXT2343-4 \
-    RegulatoryOverlayXT2343-5 \
-    RegulatoryOverlayXT2431-1 \
-    RegulatoryOverlayXT2431-2 \
-    RegulatoryOverlayXT2431-3
+    RegulatoryOverlayXT2307-3
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -352,7 +330,7 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/permissions/privapp-permissions-com.android.hotwordenrollment.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-com.android.hotwordenrollment.xml
 
 # Platform
-TARGET_BOARD_PLATFORM := mt6855
+TARGET_BOARD_PLATFORM := mt6879
 
 # Power
 PRODUCT_PACKAGES += \
@@ -367,16 +345,20 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.mtkpower@1.2.vendor
 
 PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/configs/powerhint-cancunp.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint-cancunp.json \
     $(DEVICE_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
 
 # Power Off Alarm
 PRODUCT_PACKAGES += \
     PowerOffAlarm
 
+# Recovery
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/init/init.recovery.mt6879.rc:$(TARGET_COPY_OUT_RECOVERY)/root/init.recovery.mt6879.rc \
+    $(DEVICE_PATH)/init/init.recovery.mt6879.rc:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/init.recovery.mt6879.rc
+
 # Sensors
 PRODUCT_PACKAGES += \
-    android.hardware.sensors@2.1-service.cancunf-multihal
+    android.hardware.sensors@2.1-service.manaus-multihal
 
 # Set support hide display cutout feature
 PRODUCT_PRODUCT_PROPERTIES += \
@@ -388,14 +370,6 @@ PRODUCT_PACKAGES += \
 
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 33
-
-# SKU
-# Variant Properties
-PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,product.*.prop,$(DEVICE_PATH)/configs/properties/sku/,$(TARGET_COPY_OUT_PRODUCT))
-
-PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,vendor.*.prop,$(DEVICE_PATH)/configs/properties/sku/,$(TARGET_COPY_OUT_VENDOR))
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
@@ -414,7 +388,7 @@ PRODUCT_COPY_FILES += \
 
 # Touch
 PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.cancunf
+    vendor.lineage.touch@1.0-service.manaus
 
 # USB
 $(call soong_config_set,android_hardware_mediatek_usb,audio_accessory_supported,true)
@@ -448,5 +422,5 @@ PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(DEVICE_PATH)/configs/wifi/,$(TARGET_COPY_OUT_VENDOR)/etc/wifi)
 
 # Inherit the proprietary files
-$(call inherit-product, vendor/motorola/cancunf/cancunf-vendor.mk)
-$(call inherit-product, vendor/motorola/cancunf-motcamera/cancunf-motcamera-vendor.mk)
+$(call inherit-product, vendor/motorola/manaus/manaus-vendor.mk)
+$(call inherit-product, vendor/motorola/manaus-motcamera/manaus-motcamera-vendor.mk)

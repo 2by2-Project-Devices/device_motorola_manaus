@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-#define LOG_TAG "android.hardware.lights-service.cancunf"
+#define LOG_TAG "android.hardware.lights-service.manaus"
 
 #include "Lights.h"
 #include <android-base/file.h>

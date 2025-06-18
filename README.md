@@ -1,4 +1,4 @@
-# Android Device tree for the motorola g54 5G
+# Android Device tree for the motorola edge 40 neo
 
 ```
 #

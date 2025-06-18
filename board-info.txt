@@ -1,1 +1,1 @@
-require board=cancunf
+require board=manaus

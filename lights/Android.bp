@@ -14,10 +14,10 @@
 // limitations under the License.
 
 cc_binary {
-    name: "android.hardware.lights-service.cancunf",
+    name: "android.hardware.lights-service.manaus",
     relative_install_path: "hw",
-    init_rc: ["android.hardware.lights.cancunf.rc"],
-    vintf_fragments: ["android.hardware.lights.cancunf.xml"],
+    init_rc: ["android.hardware.lights.manaus.rc"],
+    vintf_fragments: ["android.hardware.lights.manaus.xml"],
     vendor: true,
     shared_libs: [
         "libbase",

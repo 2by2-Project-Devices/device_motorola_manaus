@@ -11,23 +11,21 @@ sh_binary {
 }
 
 prebuilt_etc {
-    name: "fstab.mt6855",
-    src: "fstab.mt6855",
+    name: "fstab.mt6879",
+    src: "fstab.mt6879",
     vendor: true,
-    ramdisk_available: true,
-    vendor_ramdisk_available: true,
 }
 
 prebuilt_etc {
-    name: "init_connectivity.rc",
-    src: "init_connectivity.rc",
+    name: "init.connectivity.rc",
+    src: "init.connectivity.rc",
     relative_install_path: "init/hw",
     vendor: true,
 }
 
 prebuilt_etc {
-    name: "init.mt6855.power.rc",
-    src: "init.mt6855.power.rc",
+    name: "init.mt6879.power.rc",
+    src: "init.mt6879.power.rc",
     relative_install_path: "init/hw",
     vendor: true,
 }
@@ -38,10 +36,16 @@ prebuilt_etc {
     relative_install_path: "init/hw",
     vendor: true,
 }
+prebuilt_etc {
+    name: "init_conninfra.rc",
+    src: "init_conninfra.rc",
+    relative_install_path: "init",
+    vendor: true,
+}
 
 prebuilt_etc {
-    name: "init.cancunf.sku.rc",
-    src: "init.cancunf.sku.rc",
+    name: "init.manaus.sku.rc",
+    src: "init.manaus.sku.rc",
     relative_install_path: "init",
     vendor: true,
 }
@@ -61,6 +65,13 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
+    name: "init.mmi.usb.configfs.rc",
+    src: "init.mmi.usb.configfs.rc",
+    relative_install_path: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
     name: "init.modem.rc",
     src: "init.modem.rc",
     relative_install_path: "init/hw",
@@ -68,15 +79,15 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
-    name: "init.mt6855.rc",
-    src: "init.mt6855.rc",
+    name: "init.mt6879.rc",
+    src: "init.mt6879.rc",
     relative_install_path: "init/hw",
     vendor: true,
 }
 
 prebuilt_etc {
-    name: "init.mt6855.usb.rc",
-    src: "init.mt6855.usb.rc",
+    name: "init.mt6879.usb.rc",
+    src: "init.mt6879.usb.rc",
     relative_install_path: "init/hw",
     vendor: true,
 }
@@ -96,13 +107,6 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
-    name: "init.recovery.mt6855.rc",
-    src: "init.recovery.mt6855.rc",
-    relative_install_path: "init",
-    recovery: true,
-}
-
-prebuilt_etc {
     name: "init.sensor_2_0.rc",
     src: "init.sensor_2_0.rc",
     relative_install_path: "init/hw",
@@ -110,8 +114,8 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
-    name: "ueventd.mt6855.rc",
+    name: "ueventd.mt6879.rc",
     filename: "ueventd.rc",
-    src: "ueventd.mt6855.rc",
+    src: "ueventd.mt6879.rc",
     vendor: true,
 }

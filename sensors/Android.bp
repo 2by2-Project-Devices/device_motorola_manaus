@@ -19,7 +19,7 @@ package {
 }
 
 cc_binary {
-    name: "android.hardware.sensors@2.1-service.cancunf-multihal",
+    name: "android.hardware.sensors@2.1-service.manaus-multihal",
     defaults: [
         "hidl_defaults",
     ],
@@ -31,8 +31,8 @@ cc_binary {
         "HalProxy.cpp",
         "HalProxyCallback.cpp",
     ],
-    init_rc: ["android.hardware.sensors@2.1-service.cancunf-multihal.rc"],
-    vintf_fragments: ["android.hardware.sensors@2.1-service.cancunf-multihal.xml"],
+    init_rc: ["android.hardware.sensors@2.1-service.manaus-multihal.rc"],
+    vintf_fragments: ["android.hardware.sensors@2.1-service.manaus-multihal.xml"],
     header_libs: [
         "android.hardware.sensors@2.X-shared-utils",
     ],

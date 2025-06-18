@@ -17,7 +17,7 @@ system_ext/bin/motsettings
 system_ext/priv-app/MotorolaSettingsProvider/MotorolaSettingsProvider.apk
 
 # Moto Permissions
-product/etc/permissions/com.motorola.camera3.cancunf.xml:vendor/etc/permissions/com.motorola.camera3.cancunf.xml
+product/etc/permissions/com.motorola.camera3.manaus.xml:vendor/etc/permissions/com.motorola.camera3.manaus.xml
 product/etc/permissions/com.motorola.camera3.content.ai.xml:vendor/etc/permissions/com.motorola.camera3.content.ai.xml
 product/etc/permissions/com.motorola.camera3.lens.xml:vendor/etc/permissions/com.motorola.camera3.lens.xml
 product/etc/permissions/com.motorola.camera3.xml:vendor/etc/permissions/com.motorola.camera3.xml

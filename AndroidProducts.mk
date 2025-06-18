@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/cancunf.mk
+    $(LOCAL_DIR)/manaus.mk
