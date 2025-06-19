@@ -301,7 +301,7 @@ vendor/lib64/mt6879/lib3a.af.core.so;SYMLINK=vendor/lib64/lib3a.af.core.so
 vendor/lib64/mt6879/lib3a.af.so;SYMLINK=vendor/lib64/lib3a.af.so
 vendor/lib64/mt6879/lib3a.aishutter.so;SYMLINK=vendor/lib64/lib3a.aishutter.so
 vendor/lib64/mt6879/lib3a.alsflicker.so;SYMLINK=vendor/lib64/lib3a.alsflicker.so
-vendor/lib64/mt6879/lib3a.awbsync.so;SYMLINK=vendor/lib64/lib3a.awbsync.so
+vendor/lib64/mt6879/lib3a.awbsync.so;SYMLINK=vendor/lib64/lib3a.awbsync.so;DISABLE_CHECKELF
 vendor/lib64/mt6879/lib3a.cculog.so;SYMLINK=vendor/lib64/lib3a.cculog.so
 vendor/lib64/mt6879/lib3a.custom.ae.so;SYMLINK=vendor/lib64/lib3a.custom.ae.so
 vendor/lib64/mt6879/lib3a.flash.so;SYMLINK=vendor/lib64/lib3a.flash.so
@@ -379,7 +379,7 @@ vendor/lib64/mt6879/libcameracustom.plugin.so;SYMLINK=vendor/lib64/libcameracust
 vendor/lib64/mt6879/libcameracustom.so;SYMLINK=vendor/lib64/libcameracustom.so
 vendor/lib64/mt6879/libcam.hal3a.afassitmgr.so;SYMLINK=vendor/lib64/libcam.hal3a.afassitmgr.so
 vendor/lib64/mt6879/libcam.hal3a.cctsvr.v4l2.so;SYMLINK=vendor/lib64/libcam.hal3a.cctsvr.v4l2.so
-vendor/lib64/mt6879/libcam.hal3a.ctrl.so;SYMLINK=vendor/lib64/libcam.hal3a.ctrl.so
+vendor/lib64/mt6879/libcam.hal3a.ctrl.so;SYMLINK=vendor/lib64/libcam.hal3a.ctrl.so;DISABLE_CHECKELF
 vendor/lib64/mt6879/libcam.hal3a.guard.so;SYMLINK=vendor/lib64/libcam.hal3a.guard.so
 vendor/lib64/mt6879/libcam.hal3a.ircutdrv.so;SYMLINK=vendor/lib64/libcam.hal3a.ircutdrv.so
 vendor/lib64/mt6879/libcam.hal3a.lensdrv.so;SYMLINK=vendor/lib64/libcam.hal3a.lensdrv.so
@@ -388,7 +388,7 @@ vendor/lib64/mt6879/libcam.hal3a.lscMgrApi.so;SYMLINK=vendor/lib64/libcam.hal3a.
 vendor/lib64/mt6879/libcam.hal3a.oisdrv.so;SYMLINK=vendor/lib64/libcam.hal3a.oisdrv.so
 vendor/lib64/mt6879/libcam.hal3a.ozoomdrv.so;SYMLINK=vendor/lib64/libcam.hal3a.ozoomdrv.so
 vendor/lib64/mt6879/libcam.hal3a.policy.so;SYMLINK=vendor/lib64/libcam.hal3a.policy.so
-vendor/lib64/mt6879/libcam.hal3a.so;SYMLINK=vendor/lib64/libcam.hal3a.so
+vendor/lib64/mt6879/libcam.hal3a.so;SYMLINK=vendor/lib64/libcam.hal3a.so;DISABLE_CHECKELF
 vendor/lib64/mt6879/libcam.hal3a.tofdrv.so;SYMLINK=vendor/lib64/libcam.hal3a.tofdrv.so
 vendor/lib64/mt6879/libcam.hal3a.utils.so;SYMLINK=vendor/lib64/libcam.hal3a.utils.so
 vendor/lib64/mt6879/libcam.hal3a.v3.ae.v4l2.so;SYMLINK=vendor/lib64/libcam.hal3a.v3.ae.v4l2.so
@@ -525,7 +525,7 @@ vendor/lib64/mt6879/libmtkcam_pipemgr.so;SYMLINK=vendor/lib64/libmtkcam_pipemgr.
 vendor/lib64/mt6879/libmtkcam_postprocprovider.so;SYMLINK=vendor/lib64/libmtkcam_postprocprovider.so
 vendor/lib64/mt6879/libmtkcam_prerelease.so;SYMLINK=vendor/lib64/libmtkcam_prerelease.so
 vendor/lib64/mt6879/libmtkcam_proc.so;SYMLINK=vendor/lib64/libmtkcam_proc.so
-vendor/lib64/mt6879/libmtkcam_request_requlator.so;SYMLINK=vendor/lib64/libmtkcam_request_requlator.so
+vendor/lib64/mt6879/libmtkcam_request_requlator.so;SYMLINK=vendor/lib64/libmtkcam_request_requlator.so;DISABLE_CHECKELF
 vendor/lib64/mt6879/libmtkcam_salmgr.so;SYMLINK=vendor/lib64/libmtkcam_salmgr.so
 vendor/lib64/mt6879/libmtkcam_sensorcontrol.so;SYMLINK=vendor/lib64/libmtkcam_sensorcontrol.so
 vendor/lib64/mt6879/libmtkcam_simager.so;SYMLINK=vendor/lib64/libmtkcam_simager.so
@@ -590,7 +590,7 @@ vendor/lib64/libimgsensorca.so
 vendor/lib64/libispcameraca.so
 vendor/lib64/libmpbase.so
 vendor/lib64/libmtkcam_fdWarpConvert.so
-vendor/lib64/libmtkcam_pipelinepolicy-aov.so
+vendor/lib64/libmtkcam_pipelinepolicy-aov.so;DISABLE_CHECKELF
 vendor/lib64/libmtkcam_thirdparty.vidhance.so
 vendor/lib64/libmtkisp_metadata.so
 vendor/lib64/libmtkisp_metadata_v2.so
