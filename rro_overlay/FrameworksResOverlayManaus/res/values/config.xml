@@ -189,6 +189,9 @@
         <item>2</item>
     </array>
 
+    <!-- How long it takes for the HW to start illuminating after the illumination is requested. -->
+    <integer name="config_udfps_illumination_transition_ms">0</integer>
+
     <!-- List of biometric sensors on the device, in decreasing strength. Consumed by AuthService
          when registering authenticators with BiometricService. Format must be ID:Modality:Strength,
          where: IDs are unique per device, Modality as defined in BiometricAuthenticator.java,
@@ -325,6 +328,13 @@
          Refer to power.h for details.
     -->
     <bool name="config_powerDecoupleInteractiveModeFromDisplay">true</bool>
+
+    <!-- The properties of a UDFPS sensor in pixels, in the order listed below: -->
+    <array name="config_udfps_sensor_props" translatable="false" >
+        <item>540</item> <!-- sensorLocationX -->
+        <item>2170</item> <!-- sensorLocationY -->
+        <item>102</item> <!-- sensorRadius -->
+    </array>
 
     <!-- Boolean indicating whether the HWC setColorTransform function can be performed efficiently
          in hardware. -->
@@ -478,9 +488,6 @@
          available on some devices. -->
     <bool name="config_enableHapticTextHandle">true</bool>
 
-    <!-- Indicates whether device has a power button fingerprint sensor. -->
-    <bool name="config_is_powerbutton_fps" translatable="false">true</bool>
-
     <!-- The OEM specified sensor type for the gesture to launch the camera app. -->
     <integer name="config_cameraLaunchGestureSensorType">65540</integer>
 
@@ -490,20 +497,6 @@
 
     <!-- Whether Hearing Aid profile is supported -->
     <bool name="config_hearing_aid_profile_supported">true</bool>
-
-    <!-- An array of arrays of side fingerprint sensor properties relative to each display.
-         Note: this value is temporary and is expected to be queried directly
-         from the HAL in the future. -->
-    <array name="config_sfps_sensor_props" translatable="false">
-        <item>@array/config_sfps_sensor_props_0</item>
-    </array>
-
-    <array name="config_sfps_sensor_props_0" translatable="false">
-        <item>local:0</item> <!--item>displayId</item-->
-        <item>1080</item> <!--item>sensorLocationX</item-->
-        <item>750</item> <!--item>sensorLocationY</item-->
-        <item>200</item> <!--item>sensorRadius</item-->
-    </array>
 
     <!-- Default value for performant auth feature. -->
     <bool name="config_performantAuthDefault">true</bool>
