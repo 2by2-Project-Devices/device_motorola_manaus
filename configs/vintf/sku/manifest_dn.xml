@@ -1,3 +1,10 @@
+<!--
+    Input:
+        odm_manifest_op_dsds.xml
+        odm_manifest_dsds.xml
+        manifest_nxpnfc_dn.xml
+        manifest_nfc.xml
+-->
 <manifest version="4.0" type="device">
     <hal format="hidl">
         <name>android.hardware.nfc</name>
@@ -104,7 +111,30 @@
         <fqname>@3.0::IMtkRadioEx/mtkSmartRatSwitch1</fqname>
         <fqname>@3.0::IMtkRadioEx/mtkSmartRatSwitch2</fqname>
     </hal>
-    <hal format="aidl" override="true">
-        <name>android.hardware.secure_element</name>
+    <hal format="hidl" override="true">
+        <name>vendor.mediatek.hardware.radio_op</name>
+        <transport>hwbinder</transport>
+        <version>3.0</version>
+        <interface>
+            <name>IRadioOp</name>
+            <instance>OpImsRILd1</instance>
+            <instance>OpImsRILd2</instance>
+            <instance>slot1</instance>
+            <instance>slot2</instance>
+        </interface>
+        <fqname>@3.0::IRadioOp/OpImsRILd1</fqname>
+        <fqname>@3.0::IRadioOp/OpImsRILd2</fqname>
+        <fqname>@3.0::IRadioOp/slot1</fqname>
+        <fqname>@3.0::IRadioOp/slot2</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.nxp.nxpnfc</name>
+        <transport>hwbinder</transport>
+        <version>2.0</version>
+        <interface>
+            <name>INxpNfc</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@2.0::INxpNfc/default</fqname>
     </hal>
 </manifest>

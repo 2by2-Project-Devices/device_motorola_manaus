@@ -159,13 +159,11 @@ SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
 SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/public
 
 # SKU
-ODM_MANIFEST_SKUS += b d de dn e n
-ODM_MANIFEST_B_FILES := $(DEVICE_PATH)/configs/vintf/sku/manifest_b.xml
-ODM_MANIFEST_D_FILES := $(DEVICE_PATH)/configs/vintf/sku/manifest_d.xml
+ODM_MANIFEST_SKUS += be bn de dn
+ODM_MANIFEST_BE_FILES := $(DEVICE_PATH)/configs/vintf/sku/manifest_be.xml
+ODM_MANIFEST_BN_FILES := $(DEVICE_PATH)/configs/vintf/sku/manifest_bn.xml
 ODM_MANIFEST_DE_FILES := $(DEVICE_PATH)/configs/vintf/sku/manifest_de.xml
 ODM_MANIFEST_DN_FILES := $(DEVICE_PATH)/configs/vintf/sku/manifest_dn.xml
-ODM_MANIFEST_E_FILES := $(DEVICE_PATH)/configs/vintf/sku/manifest_e.xml
-ODM_MANIFEST_N_FILES := $(DEVICE_PATH)/configs/vintf/sku/manifest_n.xml
 
 # Verified Boot
 BOARD_AVB_ENABLE := true
