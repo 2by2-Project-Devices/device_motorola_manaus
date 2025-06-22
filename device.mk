@@ -137,7 +137,8 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.3-service.manaus
+    android.hardware.biometrics.fingerprint@2.3-service.manaus \
+    vendor.egistec.hardware.fingerprint@4.0.vendor
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
