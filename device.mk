@@ -136,6 +136,10 @@ PRODUCT_PACKAGES += \
     android.hardware.fastboot@1.1-impl-mock \
     fastbootd
 
+# Fingerprint
+PRODUCT_PACKAGES += \
+    vendor.egistec.hardware.fingerprint@4.0.vendor
+
 # FM Radio
 PRODUCT_PACKAGES += \
     FMRadio
