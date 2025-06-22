@@ -243,15 +243,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/nfc/libnfc-nxp_220.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp_220.conf
 
-DEVICE_UNAVAIL_NFC_SKUS := b d
-DEVICE_NFC_SKUS := de e
-
-PRODUCT_COPY_FILES += \
-$(foreach DEVICE_SKU, $(DEVICE_UNAVAIL_NFC_SKUS), \
-    $(DEVICE_PATH)/configs/permissions/unavail.android.hardware.nfc.hce.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_$(DEVICE_SKU)/unavail.android.hardware.nfc.hce.xml \
-    $(DEVICE_PATH)/configs/permissions/unavail.android.hardware.nfc.hcef.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_$(DEVICE_SKU)/unavail.android.hardware.nfc.hcef.xml \
-    $(DEVICE_PATH)/configs/permissions/unavail.android.hardware.nfc.uicc.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_$(DEVICE_SKU)/unavail.android.hardware.nfc.uicc.xml \
-    $(DEVICE_PATH)/configs/permissions/unavail.android.hardware.nfc.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_$(DEVICE_SKU)/unavail.android.hardware.nfc.xml)
+DEVICE_NFC_SKUS := be de
 
 PRODUCT_COPY_FILES += \
 $(foreach DEVICE_NFC_SKU, $(DEVICE_NFC_SKUS), \
