@@ -207,6 +207,7 @@ ro.vendor.mtk_nn_baseline_support=1
 ro.vendor.mtk_nn_quant_preferred=1
 
 # NFC
+persist.vendor.nfc.config_file_name=libnfc-nxp_220.conf
 persist.vendor.nfc.config_secfile_name=libnfc-sec-nci.conf
 persist.vendor.nfc.reset_after_sim_plug_in=true
 
