@@ -29,7 +29,7 @@
 #include <fstream>
 #include <thread>
 
-#include <display/drm/sde_drm.h>
+#include "sde_drm.h"
 
 enum HBM_STATE {
     OFF = 0,
