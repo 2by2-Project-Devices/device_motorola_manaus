@@ -419,6 +419,14 @@
             <instance>default</instance>
         </interface>
     </hal>
+    <hal format="hidl" optional="true">
+        <name>motorola.hardware.sensorscalibrate</name>
+        <version>1.0</version>
+        <interface>
+            <name>ISensorsCalibrate</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
     <hal format="aidl" optional="true">
         <name>motorola.hardware.sxf</name>
         <version>1-2</version>
@@ -440,6 +448,14 @@
         <version>1.0</version>
         <interface>
             <name>IMotVibrator</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>motorola.hardware.wifi.hostapd</name>
+        <version>1.0</version>
+        <interface>
+            <name>IHostapdMot</name>
             <instance>default</instance>
         </interface>
     </hal>
