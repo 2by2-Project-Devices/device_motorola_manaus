@@ -1100,3 +1100,6 @@ service osi /system/bin/osi
 
 on post-fs-data
     mkdir /data/vendor/mcRegistry 0775 system system
+
+on early-init
+    write /proc/sys/abi/tagged_addr_disabled 1
