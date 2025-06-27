@@ -1,0 +1,1 @@
+allow mtk_hal_secure_element mtk_hal_rild_hwservice:hwservice_manager find;
