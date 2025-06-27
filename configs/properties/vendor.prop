@@ -307,6 +307,7 @@ ro.vendor.mtk_femto_cell_support=1
 ro.vendor.mtk_lte_support=1
 ro.vendor.mtk_md_world_mode_support=1
 ro.vendor.mtk_mdmi_support=1
+ro.vendor.mtk_mipc_support=1
 ro.vendor.mtk_mvpu_security_support=0
 ro.vendor.mtk_ovl_bringup=0
 ro.vendor.mtk_prefer_64bit_proc=0
