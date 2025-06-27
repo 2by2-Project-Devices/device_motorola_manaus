@@ -29,3 +29,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     DeviceName=manaus \
     BuildDesc="manaus_g_sys-user 14 U1TDS34.94-12-9-10-2 e34746-5853b release-keys" \
     BuildFingerprint=motorola/manaus_g_sys/manaus:14/U1TDS34.94-12-9-10-2/e34746-5853b:user/release-keys
+
+PRODUCT_ENFORCE_PACKAGES_EXIST := true
