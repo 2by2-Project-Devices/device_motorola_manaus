@@ -1042,6 +1042,7 @@ vendor/etc/init/vendor.mediatek.hardware.keymaster_attestation@1.1-service.rc
 vendor/etc/vintf/manifest/android.hardware.security.keymint-service.trustonic.xml
 vendor/etc/vintf/manifest/android.hardware.security.secureclock-service.trustonic.xml
 vendor/etc/vintf/manifest/android.hardware.security.sharedsecret-service.trustonic.xml
+vendor/lib/libdecrypt.so
 vendor/lib/libthha.so;DISABLE_CHECKELF
 vendor/lib64/hw/kmsetkey.trustonic.so;SYMLINK=vendor/lib64/hw/kmsetkey.default.so
 vendor/lib64/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-impl.so
@@ -1295,6 +1296,7 @@ vendor/lib64/libneuron_platform.so
 vendor/lib64/libneuropilot_hal_utils.so
 vendor/lib64/libnir_neon_driver_ndk.mtk.vndk.so;FIX_SONAME
 vendor/lib64/libtflite_mtk.so;DISABLE_CHECKELF
+vendor/lib64/vendor.mediatek.hardware.apmonitor@2.0.so
 vendor/lib64/vendor.mediatek.hardware.apuware.apusys@2.0.so
 vendor/lib64/vendor.mediatek.hardware.apuware.apusys@2.1.so
 vendor/lib64/vendor.mediatek.hardware.apuware.hmp@1.0.so
@@ -1405,12 +1407,18 @@ vendor/etc/virtual-spn-conf-by-efspn.xml
 vendor/etc/virtual-spn-conf-by-imsi.xml
 vendor/lib/hw/vendor.mediatek.hardware.mms@1.6-impl.so
 vendor/lib/libMtkAinrEnh.so
+vendor/lib/libapmonitor_vendor.so
+vendor/lib/libasn1c_core.so
+vendor/lib/libasn1c_mapi.so
+vendor/lib/libasn1c_mdmi.so
 vendor/lib/libcapctrl.so
 vendor/lib/libcares_naptr.so
 vendor/lib/libcarrierconfig.so
 vendor/lib/libccci_util.so
+vendor/lib/libcvsd_mtk.so
 vendor/lib/libipsec_ims_shr.so
 vendor/lib/libmnetlink_v104.so
+vendor/lib/libmsbc_mtk.so
 vendor/lib/libmtkares.so
 vendor/lib/libmtkcutils.so
 vendor/lib/libmtkhardware_legacy.so
@@ -1420,8 +1428,13 @@ vendor/lib/libmtkproperty.so
 vendor/lib/libmtkrillog.so
 vendor/lib/libmtkshifter_vendor.so
 vendor/lib/libnwk_opt_halwrap_vendor.so
+vendor/lib/libpkm.so;DISABLE_CHECKELF
 vendor/lib/librcs_interface.so
 vendor/lib/librcs_volte_core.so
+vendor/lib/libtranslator_mapi_v3.0.so
+vendor/lib/libtranslator_mdmi_v2.8.2.so
+vendor/lib/libtranslator_utils.so
+vendor/lib/vendor.mediatek.hardware.mdmonitor@1.0.so
 vendor/lib/vendor.mediatek.hardware.mms@1.0.so
 vendor/lib/vendor.mediatek.hardware.mms@1.1.so
 vendor/lib/vendor.mediatek.hardware.mms@1.2.so
@@ -1434,6 +1447,10 @@ vendor/lib/vendor.mediatek.hardware.rcs@2.0.so
 vendor/lib64/hw/vendor.mediatek.hardware.mms@1.6-impl.so
 vendor/lib64/mt6879/libmnl.so;SYMLINK=vendor/lib64/libmnl.so
 vendor/lib64/libMtkAinrEnh.so
+vendor/lib64/libapmonitor_vendor.so
+vendor/lib64/libasn1c_core.so
+vendor/lib64/libasn1c_mapi.so
+vendor/lib64/libasn1c_mdmi.so
 vendor/lib64/libadropbox.so
 vendor/lib64/libcapctrl.so
 vendor/lib64/libcares_naptr.so
@@ -1472,6 +1489,7 @@ vendor/lib64/libviamipc-ril.so
 vendor/lib64/libwpfa.so
 vendor/lib64/motrilutils.so
 vendor/lib64/nwk_opt_imp.so
+vendor/lib64/vendor.mediatek.hardware.mdmonitor@1.0.so
 vendor/lib64/vendor.mediatek.hardware.mms@1.0.so
 vendor/lib64/vendor.mediatek.hardware.mms@1.1.so
 vendor/lib64/vendor.mediatek.hardware.mms@1.2.so
