@@ -5,3 +5,5 @@ set_prop(rild, vendor_mtk_radio_prop)
 
 # /proc/bootinfo
 allow rild vendor_proc_hw:file r_file_perms;
+
+add_hwservice(rild, mtk_hal_rild_hwservice)
