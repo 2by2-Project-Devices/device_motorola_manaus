@@ -338,6 +338,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     PowerOffAlarm
 
+# Radio
+PRODUCT_PACKAGES += \
+    vendor_mdota_symlink
+
 # Recovery
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/init/init.recovery.mt6879.rc:$(TARGET_COPY_OUT_RECOVERY)/root/init.recovery.mt6879.rc \
