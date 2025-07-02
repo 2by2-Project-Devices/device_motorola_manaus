@@ -1187,6 +1187,23 @@ vendor/lib64/vendor.trustonic.tee.tui@1.0.so
 vendor/lib64/vendor.trustonic.tee@1.0.so
 vendor/lib64/vendor.trustonic.tee@1.1.so
 
+# VPU
+vendor/lib64/libmvpu_cic_ci_compiler.so
+vendor/lib64/libmvpu_clc_cl_compiler.so
+vendor/lib64/libmvpu_clc_mvpu_debuginfo.so
+vendor/lib64/libmvpu_clc_mvpu_elf.so
+vendor/lib64/libmvpu_clc_mvpu_utility.so
+vendor/lib64/libmvpu_clc_vpu_isa.so
+vendor/lib64/libmvpu_config.so
+vendor/lib64/libmvpu_engine.so
+vendor/lib64/libmvpu_engine_pub.so
+vendor/lib64/libmvpu_pattern.so
+vendor/lib64/libmvpu_pattern_pub.so
+vendor/lib64/libmvpu_runtime.so
+vendor/lib64/libmvpu_runtime_pub.so
+vendor/lib64/libmvpuop_mtk_cv.so
+vendor/lib64/libmvpuop_mtk_nn.so
+
 # WiFi
 vendor/bin/stp_dump3
 vendor/bin/wifi_dump
