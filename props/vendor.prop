@@ -135,6 +135,10 @@ ro.hardware.gatekeeper=trustonic
 # Keystore
 ro.hardware.kmsetkey=trustonic
 
+# SOC
+ro.soc.manufacturer=Mediatek
+ro.vendor.mediatek.platform=MT6879
+
 # Surfaceflinger
 debug.sf.disable_backpressure=1
 debug.sf.early.app.duration=20000000
