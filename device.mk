@@ -30,6 +30,41 @@ PRODUCT_PACKAGES += \
     update_engine_sideload \
     update_verifier
 
+# Audio
+$(call soong_config_set,android_hardware_audio,run_64bit,true)
+PRODUCT_PACKAGES += \
+    android.hardware.audio@7.0-impl \
+    android.hardware.audio.effect@7.0-impl \
+    android.hardware.audio.service \
+    android.hardware.soundtrigger@2.3-impl
+
+PRODUCT_PACKAGES +=\
+    android.hardware.audio.common-util
+
+PRODUCT_PACKAGES += \
+    audio.primary.default \
+    audio.r_submix.default \
+    audio.bluetooth.default \
+    audio.usb.default
+
+PRODUCT_PACKAGES += \
+    audio_policy.stub \
+    libalsautils \
+    libopus.vendor \
+    audioclient-types-aidl-cpp.vendor
+
+PRODUCT_PACKAGES += \
+    MtkInCallService
+
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/audio/,$(TARGET_COPY_OUT_VENDOR)/etc)
+
+PRODUCT_COPY_FILES += \
+    frameworks/av/services/audiopolicy/config/a2dp_audio_policy_configuration_7_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_audio_policy_configuration.xml \
+    frameworks/av/services/audiopolicy/config/bluetooth_audio_policy_configuration_7_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_audio_policy_configuration.xml \
+    frameworks/av/services/audiopolicy/config/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml \
+    frameworks/av/services/audiopolicy/config/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/r_submix_audio_policy_configuration.xml
+
 # Bootcontrol
 PRODUCT_PACKAGES += \
     com.android.hardware.boot \

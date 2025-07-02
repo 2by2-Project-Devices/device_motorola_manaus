@@ -115,5 +115,8 @@ BOARD_USES_METADATA_PARTITION := true
 # Platform
 TARGET_BOARD_PLATFORM := mt6879
 
+# Properties
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/props/vendor.prop
+
 # Inherit the proprietary files
 include vendor/motorola/manaus/BoardConfigVendor.mk

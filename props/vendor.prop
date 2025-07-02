@@ -1,0 +1,8 @@
+# Audio
+aaudio.mmap_exclusive_policy=2
+aaudio.mmap_policy=2
+ro.config.vc_call_vol_steps=8
+ro.vendor.audio.moto_sst_supported=true
+ro.vendor.mtk_audio_tuning_tool_ver=V1
+ro.vendor.mtk_hifiaudio_support=1
+vendor.audio.powerhal.power.hi_res=true
