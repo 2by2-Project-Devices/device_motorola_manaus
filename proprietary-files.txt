@@ -178,6 +178,11 @@ vendor/etc/audio_param/VolumeGainMap_ParamUnitDesc.xml
 vendor/etc/audio_param/Volume_AudioParam.xml
 vendor/etc/audio_param/Volume_ParamUnitDesc.xml
 
+# Audio (firmware)
+vendor/firmware/aw882xx_acf.bin
+vendor/firmware/aw963xx_reg_0.bin
+vendor/firmware/aw963xx_reg_evt_0.bin
+
 # Bluetooth
 vendor/firmware/BT_FW.cfg
 vendor/firmware/soc7_0_ram_bt_1_1_hdr.bin
@@ -648,6 +653,13 @@ vendor/firmware/NFG1000A_firmware.bin
 vendor/firmware/lib3a.ccu
 vendor/firmware/lib3a.ccu_dummy
 
+# Camera (firmware)
+vendor/firmware/NFG1000A_battery_parameter_SB18D87942.bin
+vendor/firmware/NFG1000A_battery_parameter_SB18D87943.bin
+vendor/firmware/NFG1000A_firmware.bin
+vendor/firmware/lib3a.ccu
+vendor/firmware/lib3a.ccu_dummy
+
 # Connectivity
 vendor/bin/conninfra_loader
 vendor/etc/init/init.connfem.rc
@@ -673,6 +685,12 @@ vendor/lib/mt6879/libpq_cust_base.so;SYMLINK=vendor/lib/libpq_cust_base.so
 vendor/lib/mt6879/libpq_prot.so;SYMLINK=vendor/lib/libpq_prot.so
 vendor/lib/mt6879/libpqparamparser.so;SYMLINK=vendor/lib/libpqparamparser.so
 vendor/lib/mt6879/libpqpconfig.so;SYMLINK=vendor/lib/libpqpconfig.so
+vendor/lib/libdynamiclog.so
+vendor/lib/libiqi_bridge.so
+vendor/lib/liblog_vendor.so
+vendor/lib/libminiui.so
+vendor/lib/liboem_specific.so
+vendor/lib/libscltm.so
 vendor/lib/libaal_key.so
 vendor/lib/libappgamepq.so
 vendor/lib/libdre.so
@@ -742,6 +760,7 @@ vendor/lib64/vendor.mediatek.hardware.pq@2.9.so
 
 # Display (configs)
 vendor/etc/AbnormalDisplayLog_dynamic.xml
+vendor/etc/vhw.xml
 vendor/etc/cust_color_0.xml
 vendor/etc/cust_color_1.xml
 vendor/etc/cust_color_2.xml
@@ -1094,6 +1113,7 @@ vendor/bin/wmt_launcher
 vendor/bin/wmt_loader
 vendor/etc/init/init.wlan_drv.rc
 vendor/etc/init/wlan_assistant.rc
+vendor/firmware/WIFI_RAM_CODE_soc7_0_1a_1.bin
 vendor/lib/meta_wifi_data.so
 vendor/lib64/libwifi-hal.so:vendor/lib64/libwifi-hal-mtk.so;FIX_SONAME
 vendor/lib64/libwifitest.so
