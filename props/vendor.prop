@@ -159,6 +159,14 @@ vendor.mtk.vdec.waitkeyframeforplay=9
 ro.vendor.mtk_emmc_support=1
 ro.vendor.mtk_f2fs_enable=1
 
+# Netflix
+ro.netflix.bsp_rev=MTK6855-35905-1
+
+# NFC
+persist.vendor.nfc.config_file_name=libnfc-nxp_220.conf
+persist.vendor.nfc.config_secfile_name=libnfc-sec-nci.conf
+persist.vendor.nfc.reset_after_sim_plug_in=true
+
 # Neural Networks
 debug.mtk_tflite.target_nnapi=29
 ro.vendor.mtk_nn.option=A,B,C,D,E,F,G,Z
