@@ -6,6 +6,19 @@
 
 DEVICE_PATH := device/motorola/manaus
 
+# A/B
+AB_OTA_UPDATER := true
+AB_OTA_PARTITIONS := \
+    boot \
+    system \
+    system_ext \
+    product \
+    vendor \
+    vendor_dlkm \
+    vendor_boot \
+    vbmeta \
+    vbmeta_system
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-2a
