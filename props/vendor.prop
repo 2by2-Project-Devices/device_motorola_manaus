@@ -58,6 +58,9 @@ vendor.camera.mdp.dre.enable=0
 vendor.camera.mot.jpegmaxscaleratio=2.5
 vendor.mtk.camera.app.fd.video=1
 
+# Crypto
+ro.crypto.volume.filenames_mode=aes-256-cts
+
 # Display
 debug.graphics.game_default_frame_rate.disabled=true
 graphics.gpu.profiler.support=true
@@ -129,6 +132,9 @@ ro.vendor.mtk_widevine_drm_l1_support=1
 # Gatekeeper
 ro.hardware.gatekeeper=trustonic
 
+# Keystore
+ro.hardware.kmsetkey=trustonic
+
 # Surfaceflinger
 debug.sf.disable_backpressure=1
 debug.sf.early.app.duration=20000000
@@ -163,3 +169,8 @@ ro.surface_flinger.use_color_management=true
 ro.surface_flinger.use_content_detection_for_refresh_rate=true
 ro.surface_flinger.vsync_event_phase_offset_ns=8400000
 ro.surface_flinger.vsync_sf_event_phase_offset_ns=-10933333
+
+# TEE
+ro.mtk_key_manager_support=1
+ro.vendor.mtk_tee_gp_support=1
+ro.vendor.mtk_trustonic_tee_support=1
