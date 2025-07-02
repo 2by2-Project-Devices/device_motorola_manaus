@@ -129,6 +129,12 @@ ro.vendor.pq.mtk_video_transition=0
 drm.service.enabled=true
 ro.vendor.mtk_widevine_drm_l1_support=1
 
+# GPS
+ro.vendor.gps.chrdev=gps_drv_stp
+ro.vendor.mtk_agps_app=1
+ro.vendor.mtk_gps_support=1
+ro.vendor.mtk_log_hide_gps=1
+
 # Gatekeeper
 ro.hardware.gatekeeper=trustonic
 
@@ -184,3 +190,16 @@ ro.surface_flinger.vsync_sf_event_phase_offset_ns=-10933333
 ro.mtk_key_manager_support=1
 ro.vendor.mtk_tee_gp_support=1
 ro.vendor.mtk_trustonic_tee_support=1
+
+# Thermal
+ro.vendor.mtk_thermal_2_0=1
+
+# Wifi
+persist.vendor.mtk_wfc_support=1
+ro.vendor.wfd.dummy.enable=0
+ro.vendor.wfd.iframesize.level=0
+ro.vendor.wifi.sap.concurrent.iface=ap1
+ro.vendor.wifi.sap.interface=ap0
+ro.vendor.wlan.chrdev=wmt_chrdev_wifi_connac2
+ro.vendor.wlan.gen=gen4m_6879
+ro.vendor.wlan.standalone.log=y
