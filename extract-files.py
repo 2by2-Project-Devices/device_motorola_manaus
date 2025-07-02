@@ -41,7 +41,7 @@ blob_fixups: blob_fixups_user_type = {
     'system_ext/lib64/libsink-mtk.so': blob_fixup()
         .add_needed('libaudioclient_shim.so'),
     'system_ext/lib64/libsource.so': blob_fixup()
-        .add_needed('libui_shim.so')
+        .add_needed('libui_shim.so'),
     'vendor/etc/init/android.hardware.media.c2@1.2-mediatek-64b.rc': blob_fixup()
         .regex_replace('mediatek', 'mediatek-64b'),
     'vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b': blob_fixup()
@@ -79,10 +79,12 @@ blob_fixups: blob_fixups_user_type = {
         .regex_replace('default9', 'default'),
     ('vendor/lib64/mt6879/lib3a.flash.so', 'vendor/lib64/mt6879/lib3a.ae.stat.so',
      'vendor/lib64/mt6879/lib3a.sensors.flicker.so', 'vendor/lib64/mt6879/lib3a.sensors.color.so',
-     'vendor/lib64/mt6879/libaaa_ltm.so', 'vendor/lib64/lib3a.ae.pipe.so'): blob_fixup()
+     'vendor/lib64/lib3a.ae.pipe.so'): blob_fixup()
         .add_needed('liblog.so'),
     'vendor/lib64/mt6879/libmnl.so': blob_fixup()
         .add_needed('libcutils.so'),
+    'vendor/lib64/com.motorola.hardware.biometric.fingerprint@1.1.so': blob_fixup()
+        .add_needed('libshim_fp.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
