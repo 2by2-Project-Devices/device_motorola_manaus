@@ -120,6 +120,27 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.location.gps.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.location.gps.xml
 
+# Init
+PRODUCT_PACKAGES += \
+    fstab.mt6879 \
+    init.connectivity.rc \
+    init.connectivity.common.rc \
+    init_conninfra.rc \
+    init.mmi.overlay.rc \
+    init.mmi.rc \
+    init.mmi.usb.configfs.rc \
+    init.modem.rc \
+    init.mt6879.rc \
+    init.mt6879.usb.rc \
+    init.mtkgki.rc \
+    init.oem.hw.sh \
+    init.project.rc \
+    init.sensor_2_0.rc \
+    ueventd.mt6879.rc
+
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/init/fstab.mt6879:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.mt6879
+
 # Keymint
 PRODUCT_PACKAGES += \
     libkeymint.vendor \
