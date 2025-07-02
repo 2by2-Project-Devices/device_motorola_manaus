@@ -86,6 +86,8 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libutils-v32.so'),
     'system_ext/lib64/libimsma.so': blob_fixup()
         .replace_needed('libsink.so', 'libsink-mtk.so'),
+    'vendor/lib64/com.motorola.hardware.biometric.fingerprint@1.1.so': blob_fixup()
+        .add_needed('libshim_fp.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(

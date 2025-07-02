@@ -137,7 +137,8 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.3-service.manaus
+    android.hardware.biometrics.fingerprint@2.3-service.manaus \
+    libshim_fp
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
