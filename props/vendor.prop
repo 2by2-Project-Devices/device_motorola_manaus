@@ -122,6 +122,10 @@ ro.vendor.pq.mtk_ultra_dimming_support=0
 ro.vendor.pq.mtk_ultra_resolution_support=0
 ro.vendor.pq.mtk_video_transition=0
 
+# DRM
+drm.service.enabled=true
+ro.vendor.mtk_widevine_drm_l1_support=1
+
 # Surfaceflinger
 debug.sf.disable_backpressure=1
 debug.sf.early.app.duration=20000000
