@@ -174,7 +174,7 @@ PRODUCT_COPY_FILES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service.pixel-libperfmgrAdd commentMore actions
+    android.hardware.power-service.pixel-libperfmgr
 
 PRODUCT_PACKAGES += \
     libmtkperf_client_vendor
@@ -184,6 +184,10 @@ PRODUCT_COPY_FILES += \
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
+
+# Radio
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.software.ipsec_tunnels.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.ipsec_tunnels.xml
 
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 31
