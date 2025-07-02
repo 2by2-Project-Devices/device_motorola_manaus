@@ -72,6 +72,13 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
+    name: "init.mt6879.power.rc",
+    src: "init.mt6879.power.rc",
+    relative_install_path: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
     name: "init.mt6879.usb.rc",
     src: "init.mt6879.usb.rc",
     relative_install_path: "init/hw",

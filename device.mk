@@ -138,6 +138,7 @@ PRODUCT_PACKAGES += \
     init.modem.rc \
     init.mt6879.rc \
     init.mt6879.usb.rc \
+    init.mt6879.power.rc \
     init.mtkgki.rc \
     init.oem.hw.sh \
     init.project.rc \
@@ -167,6 +168,16 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.lights-service.manaus
 
+# Power
+PRODUCT_PACKAGES += \
+    android.hardware.power-service.pixel-libperfmgrAdd commentMore actions
+
+PRODUCT_PACKAGES += \
+    libmtkperf_client_vendor
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
+
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
@@ -176,7 +187,10 @@ PRODUCT_SHIPPING_API_LEVEL := 31
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
-    hardware/mediatek
+    hardware/mediatek \
+    hardware/mediatek/libmtkperf_client \
+    hardware/google/pixel \
+    hardware/google/interfaces
 
 # Vibrator
 PRODUCT_PACKAGES += \
