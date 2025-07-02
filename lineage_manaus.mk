@@ -26,5 +26,5 @@ PRODUCT_GMS_CLIENTID_BASE := android-motorola
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     DeviceName=manaus \
-    BuildDesc="manaus_g_sys-user 14 U1TMS34.107-34-9-3-4 5beb9-cde7fb release-keys" \
-    BuildFingerprint=motorola/manaus_g_hal/manaus:12/U1TMS34.107-34-9-3-4/7f92b:user/release-keys
+    BuildDesc="manaus_g_sys-user 15 V1TM35H.3-45 2e811 release-keys" \
+    BuildFingerprint=motorola/manaus_g_hal/manaus:12/V1TM35H.3-45/2e811:user/release-keys
