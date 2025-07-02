@@ -5,7 +5,9 @@
 //
 
 soong_namespace {
-
+    imports: [
+        "vendor/motorola/manaus",
+    ]
 }
 
 install_symlink {
