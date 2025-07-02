@@ -1,0 +1,3 @@
+02b55f97c2a6633f7a9a3f87f1a945028dfb0e6308ecee2856d2f510b5e1e852 com.motorola.hardware.biometric.fingerprint@1.0::types
+fc3273905e20cc30ba21c436179a25097f22b4e586244fb772ec2258cbe58504 com.motorola.hardware.biometric.fingerprint@1.0::IMotoFingerPrint
+0f24eb5a7ac7b8e6c7bad7997a6fb784c732e967f88ebfc619a57dbc55e8d30c com.motorola.hardware.biometric.fingerprint@1.0::IMotoFingerPrintSensorTest
