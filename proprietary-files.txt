@@ -796,6 +796,12 @@ product/app/EuiccPartnerApp/EuiccPartnerApp.apk;PRESIGNED
 product/etc/permissions/privapp-permissions-com.google.android.euicc.xml
 product/priv-app/EuiccGoogle/EuiccGoogle.apk;PRESIGNED
 
+# Felica
+product/etc/felica/common.cfg
+product/etc/felica/mfm.cfg
+product/etc/felica/mfs.cfg
+product/priv-app/MobileFeliCaClient/MobileFeliCaClient.apk;PRESIGNED;SKIPAPKCHECKS
+
 # Fuelgauge
 vendor/bin/fuelgauged
 vendor/etc/init/fuelgauged_init.rc
