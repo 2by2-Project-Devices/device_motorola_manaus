@@ -1136,6 +1136,29 @@ vendor/lib64/vendor.mediatek.hardware.mms@1.4.so
 vendor/lib64/vendor.mediatek.hardware.mms@1.5.so
 vendor/lib64/vendor.mediatek.hardware.mms@1.6.so
  
+# NFC
+vendor/bin/pnscr
+vendor/bin/pnscr_cal
+vendor/etc/libese-nxp.conf
+vendor/etc/libnfc-nci.conf
+vendor/etc/libnfc-nci_100.conf
+vendor/etc/libnfc-nci_220.conf
+vendor/etc/libnfc-nci_220e.conf
+vendor/etc/libnfc-nci_557.conf
+vendor/etc/libnfc-nci_560.conf
+vendor/etc/libnfc-nxp-pnscr.conf
+vendor/etc/libnfc-nxp_220.conf
+vendor/etc/libnfc-nxp_220e.conf
+vendor/etc/libnfc-nxp_560.conf
+vendor/etc/nfc_calibration.txt
+vendor/etc/sn100u_nfcon.pnscr
+vendor/etc/sn100u_pnx_ese_cplc.pnscr
+vendor/lib64/libpn557_fw.so
+vendor/lib64/libpn560_fw.so
+vendor/lib64/libsn100u_fw.so
+vendor/lib64/libsn220u_fw.so
+vendor/lib64/ls_client.so;DISABLE_CHECKELF
+
 # NVRAM
 vendor/bin/hw/vendor.mediatek.hardware.nvram@1.1-service
 vendor/bin/fuelgauged_nvram
@@ -1362,6 +1385,10 @@ vendor/etc/init/init.vtservice_hidl.rc
 vendor/lib64/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so
 vendor/lib64/vendor.mediatek.hardware.videotelephony@1.0.so;MODULE_SUFFIX=_vendor
 system_ext/priv-app/ImsService/ImsService.apk
+
+# Secure element
+vendor/bin/hw/android.hardware.secure_element@1.2-service-mediatek
+vendor/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc
 
 # Sensors
 vendor/etc/permissions/unavail.android.hardware.sensor.barometer.xml

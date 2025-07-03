@@ -127,6 +127,13 @@ TARGET_VENDOR_PROP += $(DEVICE_PATH)/props/vendor.prop
 # RIL
 ENABLE_VENDOR_RIL_SERVICE := true
 
+# SKU
+ODM_MANIFEST_SKUS += be de bn dn
+ODM_MANIFEST_BE_FILES := $(DEVICE_PATH)/configs/sku/manifest_de.xml
+ODM_MANIFEST_DE_FILES := $(DEVICE_PATH)/configs/sku/manifest_be.xml
+ODM_MANIFEST_BN_FILES := $(DEVICE_PATH)/configs/sku/manifest_bn.xml
+ODM_MANIFEST_DN_FILES := $(DEVICE_PATH)/configs/sku/manifest_dn.xml
+
 # Verified Boot
 BOARD_AVB_ENABLE := true
 BOARD_AVB_ALGORITHM := SHA256_RSA2048
