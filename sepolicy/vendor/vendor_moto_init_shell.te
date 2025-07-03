@@ -11,7 +11,7 @@ allow vendor_moto_init_shell vendor_file:file execute_no_trans;
 # /mnt/vendor/persist/fps access
 allow vendor_moto_init_shell mnt_vendor_file:dir search;
 allow vendor_moto_init_shell vendor_persist_fingerprint_file:dir rw_dir_perms;
-allow vendor_moto_init_shell vendor_persist_fingerprint_file:file rw_file_perms;
+allow vendor_moto_init_shell vendor_persist_fingerprint_file:file create_file_perms;
 
 # /proc/hw RW access
 allow vendor_moto_init_shell vendor_proc_hw:dir r_dir_perms;
