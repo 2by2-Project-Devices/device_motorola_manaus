@@ -791,6 +791,11 @@ vendor/lib64/libtlcWidevineModularDrm.so
 vendor/lib64/liburee_meta_drmkeyinstall.so
 vendor/lib64/libwvhidl.so
 
+# eUICC
+product/app/EuiccPartnerApp/EuiccPartnerApp.apk;PRESIGNED
+product/etc/permissions/privapp-permissions-com.google.android.euicc.xml
+product/priv-app/EuiccGoogle/EuiccGoogle.apk;PRESIGNED
+
 # Fuelgauge
 vendor/bin/fuelgauged
 vendor/etc/init/fuelgauged_init.rc
