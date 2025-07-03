@@ -1,0 +1,35 @@
+# NFC
+on property:ro.vendor.hw.nfc=nq && property:persist.vendor.nfc.config_file_name=*
+    start vendor.nfc_hal_service
+
+on property:ro.vendor.hw.nfc=ese_nq && property:persist.vendor.nfc.config_file_name=*
+    start vendor.nfc_hal_service
+
+on property:ro.vendor.hw.nfc=true && property:persist.vendor.nfc.config_file_name=*
+    start vendor.nfc_hal_service
+
+on property:ro.vendor.hw.nfc=nxp && property:persist.vendor.nfc.config_file_name=*
+    start vendor.nfc_hal_service
+
+on property:ro.vendor.hw.nfc=ese_nxp && property:persist.vendor.nfc.config_file_name=*
+    start vendor.nfc_hal_service
+
+on property:ro.vendor.hw.nfc=ese_nq
+    start vendor.secure_element_hal_service
+
+on post-fs && property:ro.vendor.hw.nfc=false
+    stop mtk_secure_element_hal_service
+
+service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc-service.nxp
+    override
+    class early_hal
+    user nfc
+    group nfc drmrpc system
+    disabled
+
+service vendor.secure_element_hal_service /vendor/bin/hw/android.hardware.secure_element-service.nxp
+    override
+    class hal
+    user secure_element
+    group secure_element
+    disabled

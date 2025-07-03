@@ -11,6 +11,13 @@ sh_binary {
 }
 
 prebuilt_etc {
+    name: "init.sku.rc",
+    src: "init.sku.rc",
+    relative_install_path: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
     name: "fstab.mt6879",
     src: "fstab.mt6879",
     vendor: true,

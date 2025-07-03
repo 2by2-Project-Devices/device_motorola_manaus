@@ -150,6 +150,7 @@ PRODUCT_COPY_FILES += \
 # Init
 PRODUCT_PACKAGES += \
     fstab.mt6879 \
+    init.sku.rc \
     init.connectivity.rc \
     init.connectivity.common.rc \
     init_conninfra.rc \
