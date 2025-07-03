@@ -223,6 +223,7 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_PACKAGES += \
     FrameworkResOverlayManaus \
     SettingsResOverlayManaus \
+    SystemUIOverlayManaus \
     TetheringConfigOverlay \
     WifiOverlay \
     EuiccOverlay \
