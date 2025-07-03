@@ -179,7 +179,8 @@ PRODUCT_PACKAGES += \
     FrameworkResOverlayManaus \
     SettingsResOverlayManaus \
     TetheringConfigOverlay \
-    WifiOverlay
+    WifiOverlay \
+    EuiccOverlay
 
 # Power
 PRODUCT_PACKAGES += \
