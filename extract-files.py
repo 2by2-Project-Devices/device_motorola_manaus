@@ -65,6 +65,12 @@ blob_fixups: blob_fixups_user_type = {
      'vendor/lib64/sensors.moto.so'): blob_fixup()
         .replace_needed('libutils.so', 'libutils-v32.so')
         .add_needed('libbase_shim.so'),
+    ('vendor/lib64/mt6879/lib3a.flash.so', 'vendor/lib64/mt6879/lib3a.ae.stat.so',
+     'vendor/lib64/mt6879/lib3a.sensors.flicker.so', 'vendor/lib64/mt6879/lib3a.sensors.color.so',
+     'vendor/lib64/mt6879/libaaa_ltm.so', 'vendor/lib64/lib3a.ae.pipe.so'): blob_fixup()
+        .add_needed('liblog.so'),
+    'vendor/lib64/mt6879/libmnl.so': blob_fixup()
+        .add_needed('libcutils.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
