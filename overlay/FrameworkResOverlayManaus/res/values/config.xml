@@ -184,4 +184,7 @@
 
     <!-- Whether this device is supporting the software microphone toggle -->
     <bool name="config_supportsMicToggle">true</bool>
+
+    <!-- If true, the display will be shifted around in ambient mode. -->
+    <bool name="config_enableBurnInProtection">true</bool>
 </resources>
