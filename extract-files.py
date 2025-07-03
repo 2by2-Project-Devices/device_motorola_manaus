@@ -50,6 +50,10 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('android.hardware.security.keymint-V1-ndk_platform.so', 'android.hardware.security.keymint-V1-ndk.so')
         .replace_needed('android.hardware.security.sharedsecret-V1-ndk_platform.so', 'android.hardware.security.sharedsecret-V1-ndk.so')
         .replace_needed('android.hardware.security.secureclock-V1-ndk_platform.so', 'android.hardware.security.secureclock-V1-ndk.so'),
+    ('vendor/bin/mnld', 'vendor/lib64/hw/android.hardware.sensors@2.X-subhal-mediatek.so', 'vendor/lib64/mt6879/libcam.utils.sensorprovider.so'): blob_fixup()
+        .add_needed('android.hardware.sensors@1.0-convert-shared.so'),
+    'vendor/lib64/hw/mt6879/vendor.mediatek.hardware.pq@2.15-impl.so': blob_fixup()
+        .add_needed('android.hardware.sensors@1.0-convert-shared.so')
 }  # fmt: skip
 
 module = ExtractUtilsModule(
