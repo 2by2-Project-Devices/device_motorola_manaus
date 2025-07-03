@@ -270,6 +270,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/mediatek \
+    hardware/motorola \
     hardware/mediatek/libmtkperf_client \
     hardware/google/pixel \
     hardware/google/interfaces
