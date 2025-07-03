@@ -54,6 +54,7 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('android.hardware.sensors@1.0-convert-shared.so'),
     'vendor/lib64/hw/mt6879/vendor.mediatek.hardware.pq@2.15-impl.so': blob_fixup()
         .add_needed('android.hardware.sensors@1.0-convert-shared.so')
+        .replace_needed('libutils.so', 'libutils-v32.so'),
     ('vendor/lib64/mt6879/libcam.hal3a.v3.so', 'vendor/lib64/hw/hwcomposer.mtk_common.so'): blob_fixup()
         .add_needed('libprocessgroup_shim.so'),
     ('vendor/lib64/hw/mt6879/android.hardware.camera.provider@2.6-impl-mediatek.so','vendor/lib64/mt6879/libmtkcam_stdutils.so',
