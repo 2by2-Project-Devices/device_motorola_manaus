@@ -237,9 +237,6 @@
         <item>102</item> <!-- sensorRadius -->
     </integer-array>
 
-    <!-- The radius of the enrollment progress bar, in dp -->
-    <integer name="config_udfpsEnrollProgressBar" translatable="false">70</integer>
-
     <!-- Type of the single tap sensor. Empty if single tap is not supported. -->
     <string name="config_dozeTapSensorType" translatable="false">org.lineageos.sensor.single_tap</string>
 
