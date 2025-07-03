@@ -814,7 +814,6 @@ vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-ets
 vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-goodixservice.rc
 vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service-ets2.rc
 vendor/lib64/hw/fingerprint.goodix.default.so
-vendor/lib64/com.motorola.hardware.biometric.fingerprint@1.1.so
 vendor/lib64/com.motorola.hardware.display.panel@1.0.so
 vendor/lib64/libgf_hal.so
 vendor/lib64/vendor.egistec.hardware.fingerprint@4.0.so
