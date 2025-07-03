@@ -1076,6 +1076,29 @@ vendor/lib64/libvpu5.so
 vendor/bin/init.insmod.sh
 vendor/etc/init.insmod.mt6879.cfg
 
+# MotCamera4
+product/app/MotCamera3AI/MotCamera3AI.apk;PRESIGNED
+product/etc/permissions/deviceowner-configuration-com.motorola.camera3.xml
+product/etc/permissions/privapp-permissions-com.motorola.camera3.xml
+product/etc/sysconfig/hiddenapi-whitelist-com.motorola.camera3.xml
+product/priv-app/MotCamera4/MotCamera4.apk;PRESIGNED;NODEXPO
+system/app/MotoSignatureApp/MotoSignatureApp.apk;PRESIGNED
+system/etc/permissions/com.motorola.motosignature.xml
+system/etc/permissions/moto-core_services.xml
+system/etc/permissions/moto-settings.xml
+system/framework/com.motorola.motosignature.jar
+system/framework/moto-core_services.jar
+system/framework/moto-settings.jar
+system_ext/bin/motsettings
+system_ext/priv-app/MotorolaSettingsProvider/MotorolaSettingsProvider.apk;NODEXPO
+
+# Moto Permissions
+product/etc/permissions/com.motorola.camera3.manaus.xml:vendor/etc/permissions/com.motorola.camera3.manaus.xml
+product/etc/permissions/com.motorola.camera3.content.ai.xml:vendor/etc/permissions/com.motorola.camera3.content.ai.xml
+product/etc/permissions/com.motorola.camera3.lens.xml:vendor/etc/permissions/com.motorola.camera3.lens.xml
+product/etc/permissions/com.motorola.camera3.xml:vendor/etc/permissions/com.motorola.camera3.xml
+product/etc/permissions/com.motorola.moto-uirefresh.xml
+
 # Motorola (scripts)
 vendor/bin/motobox;SYMLINK=vendor/bin/expat
 vendor/bin/hardware_revisions.sh
