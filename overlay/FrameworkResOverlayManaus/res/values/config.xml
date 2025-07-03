@@ -236,4 +236,7 @@
         <item>2170</item> <!-- sensorLocationY -->
         <item>102</item> <!-- sensorRadius -->
     </integer-array>
+
+    <!-- The radius of the enrollment progress bar, in dp -->
+    <integer name="config_udfpsEnrollProgressBar" translatable="false">70</integer>
 </resources>
