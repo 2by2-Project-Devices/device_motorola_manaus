@@ -178,4 +178,10 @@
     <!-- Whether a software navigation bar should be shown. NOTE: in the future this may be
          autodetected from the Configuration. -->
     <bool name="config_showNavigationBar">true</bool>
+
+    <!-- Whether this device is supporting the camera toggle -->
+    <bool name="config_supportsCamToggle">true</bool>
+
+    <!-- Whether this device is supporting the software microphone toggle -->
+    <bool name="config_supportsMicToggle">true</bool>
 </resources>
