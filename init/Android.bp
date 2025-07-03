@@ -13,7 +13,7 @@ sh_binary {
 prebuilt_etc {
     name: "init.sku.rc",
     src: "init.sku.rc",
-    relative_install_path: "init/hw",
+    relative_install_path: "init",
     vendor: true,
 }
 
