@@ -17,3 +17,5 @@ allow hal_fingerprint_default mnt_vendor_file:dir search;
 hal_client_domain(hal_fingerprint_default, hal_power)
 hal_client_domain(hal_fingerprint_default, hal_health)
 r_dir_file(hal_fingerprint_default, sysfs_batteryinfo)
+allow hal_fingerprint_default gpu_device:dir { search };
+allow hal_fingerprint_default dri_device:chr_file { open read write ioctl getattr };
