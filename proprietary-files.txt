@@ -3,6 +3,9 @@
 ## variant: RETAIL
 
 # AEE
+vendor/lib/libaedv.so
+vendor/lib/libladder.so
+vendor/lib/libudf.so
 vendor/lib64/libaedv.so
 vendor/lib64/libladder.so
 vendor/lib64/libudf.so
@@ -691,6 +694,7 @@ vendor/lib/mt6879/libpq_cust_base.so;SYMLINK=vendor/lib/libpq_cust_base.so
 vendor/lib/mt6879/libpq_prot.so;SYMLINK=vendor/lib/libpq_prot.so
 vendor/lib/mt6879/libpqparamparser.so;SYMLINK=vendor/lib/libpqparamparser.so
 vendor/lib/mt6879/libpqpconfig.so;SYMLINK=vendor/lib/libpqpconfig.so
+vendor/lib/mt6879/libaiselector.so;SYMLINK=vendor/lib/libaiselector.so
 vendor/lib/libdynamiclog.so
 vendor/lib/libiqi_bridge.so
 vendor/lib/liblog_vendor.so
@@ -733,6 +737,7 @@ vendor/lib64/mt6879/libpq_prot.so;SYMLINK=vendor/lib64/libpq_prot.so
 vendor/lib64/mt6879/libpqparamparser.so;SYMLINK=vendor/lib64/libpqparamparser.so
 vendor/lib64/mt6879/libpqpconfig.so;SYMLINK=vendor/lib64/libpqpconfig.so
 vendor/lib64/mt6879/libdpframework.so;SYMLINK=vendor/lib64/libdpframework.so
+vendor/lib64/mt6879/libaiselector.so;SYMLINK=vendor/lib64/libaiselector.so
 vendor/lib64/libaal_key.so
 vendor/lib64/libappgamepq.so
 vendor/lib64/libcomposer_ext.so
@@ -810,13 +815,13 @@ product/priv-app/MobileFeliCaClient/MobileFeliCaClient.apk;PRESIGNED;SKIPAPKCHEC
 
 # Fingerprint
 vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-goodixservice
-vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-ets
+vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-ets;DISABLE_CHECKELF
 vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-goodixservice.rc
 vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service-ets2.rc
 vendor/lib64/hw/fingerprint.goodix.default.so
 vendor/lib64/com.motorola.hardware.display.panel@1.0.so
-vendor/lib64/libgf_hal.so
-vendor/lib64/vendor.egistec.hardware.fingerprint@4.0.so
+vendor/lib64/libgf_hal.so;DISABLE_CHECKELF
+vendor/lib64/com.motorola.hardware.biometric.fingerprint@1.1.so
 vendor/lib64/vendor.goodix.hardware.biometrics.fingerprint@2.1.so
 vendor/lib64/vendor.goodix.hardware.biometrics.fingerprint@2.1_vendor.so
 
@@ -1214,6 +1219,7 @@ vendor/lib64/vendor.mediatek.hardware.nvram@1.0.so
 vendor/lib64/vendor.mediatek.hardware.nvram@1.1.so
 
 # Power
+vendor/lib64/vendor.mediatek.hardware.power@1.1.so
 vendor/lib64/vendor.mediatek.hardware.power@2.0.so
 
 # Public libraries
