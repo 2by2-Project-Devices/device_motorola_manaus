@@ -1488,11 +1488,6 @@ vendor/lib64/libmvpu_runtime_pub.so
 vendor/lib64/libmvpuop_mtk_cv.so
 vendor/lib64/libmvpuop_mtk_nn.so
 
-# USB
-vendor/bin/hw/android.hardware.usb@1.2-service-mediatekv2
-vendor/etc/init/android.hardware.usb@1.2-service-mediatekv2.rc
-vendor/etc/vintf/manifest/android.hardware.usb@1.2-service-mediatekv2.xml:vendor/etc/vintf/manifest/manifest_android.hardware.usb@1.2-service-mediatekv2.xml
-
 # WiFi
 vendor/bin/stp_dump3
 vendor/bin/wifi_dump
