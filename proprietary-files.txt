@@ -192,6 +192,11 @@ vendor/firmware/aw963xx_reg_0.bin
 vendor/firmware/aw963xx_reg_evt_0.bin
 
 # Bluetooth
+vendor/bin/autobt
+vendor/bin/bt_dump
+vendor/etc/init/init.bt_drv.rc
+vendor/etc/bt_stack_debug.conf
+vendor/etc/bt_stack_level6.conf
 vendor/firmware/BT_FW.cfg
 vendor/firmware/soc7_0_ram_bt_1_1_hdr.bin
 vendor/firmware/soc7_0_ram_bt_1a_1_hdr.bin
