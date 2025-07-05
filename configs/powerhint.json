@@ -46,7 +46,6 @@
       "Path": "/sys/devices/system/cpu/cpufreq/policy0/scaling_min_freq",
       "Values": [
         "9999999",
-        "9999999",
         "2000000",
         "1900000",
         "1850000",
@@ -260,7 +259,7 @@
       "PowerHint": "SUSTAINED_PERFORMANCE",
       "Node": "CPULittleClusterMaxFreq",
       "Duration": 0,
-      "Value": "1350000"
+      "Value": "2000000"
     },
     {
       "PowerHint": "EXPENSIVE_RENDERING",
@@ -356,13 +355,13 @@
       "PowerHint": "DISPLAY_INACTIVE",
       "Node": "CPULittleClusterMaxFreq",
       "Duration": 0,
-      "Value": "400000"
+      "Value": "700000"
     },
     {
       "PowerHint": "DISPLAY_INACTIVE",
       "Node": "CPUBigClusterMaxFreq",
       "Duration": 0,
-      "Value": "450000"
+      "Value": "750000"
     },
     {
       "PowerHint": "DISPLAY_INACTIVE",
