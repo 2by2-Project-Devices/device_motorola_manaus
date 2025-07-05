@@ -225,8 +225,6 @@
       "Name": "FGUclampMin",
       "Path": "/dev/cpuctl/foreground/cpu.uclamp.min",
       "Values": [
-        "100",
-        "75",
         "10",
         "0"
       ],
@@ -237,7 +235,6 @@
       "Path": "/dev/cpuctl/top-app/cpu.uclamp.min",
       "Values": [
         "100",
-        "75",
         "10",
         "0"
       ],
@@ -310,6 +307,18 @@
       "Node": "GPUSchedPeriod",
       "Duration": 0,
       "Value": "50"
+    },
+    {
+      "PowerHint": "INTERACTION",
+      "Node": "FGUclampMin",
+      "Duration": 0,
+      "Value": "10"
+    },
+    {
+      "PowerHint": "INTERACTION",
+      "Node": "TAUclampMin",
+      "Duration": 0,
+      "Value": "10"
     },
     {
       "PowerHint": "INTERACTION",
@@ -402,6 +411,18 @@
       "Value": "50"
     },
     {
+      "PowerHint": "GAME",
+      "Node": "FGUclampMin",
+      "Duration": 0,
+      "Value": "10"
+    },
+    {
+      "PowerHint": "GAME",
+      "Node": "TAUclampMin",
+      "Duration": 0,
+      "Value": "100"
+    },
+    {
       "PowerHint": "GAME_LOADING",
       "Node": "CPULittleClusterMinFreq",
       "Duration": 0,
@@ -412,6 +433,18 @@
       "Node": "CPUBigClusterMinFreq",
       "Duration": 0,
       "Value": "9999999"
+    },
+    {
+      "PowerHint": "DISPLAY_INACTIVE",
+      "Node": "FGUclampMin",
+      "Duration": 0,
+      "Value": "0"
+    },
+    {
+      "PowerHint": "DISPLAY_INACTIVE",
+      "Node": "TAUclampMin",
+      "Duration": 0,
+      "Value": "0"
     },
     {
       "PowerHint": "DISPLAY_INACTIVE",
