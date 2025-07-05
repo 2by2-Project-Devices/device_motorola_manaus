@@ -393,6 +393,18 @@
     },
     {
       "PowerHint": "DISPLAY_INACTIVE",
+      "Node": "CPULittleClusterMaxFreq",
+      "Duration": 0,
+      "Value": "400000"
+    },
+    {
+      "PowerHint": "DISPLAY_INACTIVE",
+      "Node": "CPUBigClusterMaxFreq",
+      "Duration": 0,
+      "Value": "450000"
+    },
+    {
+      "PowerHint": "DISPLAY_INACTIVE",
       "Node": "CPULittleClusterMinFreq",
       "Duration": 0,
       "Value": "400000"
