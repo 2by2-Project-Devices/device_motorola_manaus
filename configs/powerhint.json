@@ -190,6 +190,15 @@
       "ResetOnInit": true
     },
     {
+      "Name": "RestrictedCpuset",
+      "Path": "/dev/cpuset/restricted/cpus",
+      "Values": [
+        "0-3",
+        "0-7"
+      ],
+      "ResetOnInit": true
+    },
+    {
       "Name": "GPUSchedPeriod",
       "Path": "/sys/devices/platform/soc/13000000.mali/csg_scheduling_period",
       "Values": [
@@ -345,6 +354,12 @@
       "Node": "CPUBigClusterDownRateLimitUs",
       "Duration": 0,
       "Value": "500"
+    },
+    {
+      "PowerHint": "DISPLAY_INACTIVE",
+      "Node": "RestrictedCpuset",
+      "Duration": 0,
+      "Value": "0-3"
     }
   ]
 }
