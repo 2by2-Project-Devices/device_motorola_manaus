@@ -298,7 +298,7 @@ PRODUCT_PACKAGES += \
 
 # Vibrator
 PRODUCT_PACKAGES += \
-    vendor.qti.hardware.vibrator.service.mediatek
+    vendor.qti.hardware.vibrator.service.manaus
 
 # Wifi
 PRODUCT_PACKAGES += \
