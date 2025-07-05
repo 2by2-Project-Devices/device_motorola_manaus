@@ -324,3 +324,6 @@ ro.vendor.wifi.sap.interface=ap0
 ro.vendor.wlan.chrdev=wmt_chrdev_wifi_connac2
 ro.vendor.wlan.gen=gen4m_6879
 ro.vendor.wlan.standalone.log=y
+
+# Zygote
+zygote.critical_window.minute=10
