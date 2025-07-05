@@ -685,12 +685,15 @@ vendor/firmware/soc7_0_ram_mcu_1_1_hdr.bin
 vendor/firmware/soc7_0_ram_mcu_1a_1_hdr.bin
 vendor/firmware/soc7_0_ram_mcu_1b_1_hdr.bin
 vendor/firmware/soc7_0_ram_wmmcu_1a_1_hdr.bin
+vendor/firmware/remoteproc_scp
 vendor/lib/libconnfem.so
 vendor/lib64/libconnfem.so
 
 # Display
 vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service
 vendor/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc
+vendor/etc/aivrs.ini
+vendor/etc/hdrcfg_manaus.cfg
 vendor/lib/mt6879/arm.graphics-V1-ndk_platform.so;SYMLINK=vendor/lib/arm.graphics-V1-ndk_platform.so
 vendor/lib/hw/mt6879/vendor.mediatek.hardware.pq@2.15-impl.so;SYMLINK=vendor/lib/hw/vendor.mediatek.hardware.pq@2.15-impl.so
 vendor/lib/mt6879/libdpframework.so;SYMLINK=vendor/lib/libdpframework.so
@@ -823,6 +826,7 @@ vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-goodixservice
 vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-ets;DISABLE_CHECKELF
 vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-goodixservice.rc
 vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service-ets2.rc
+vendor/lib64/libRbsFlow.so
 vendor/lib64/hw/fingerprint.goodix.default.so
 vendor/lib64/com.motorola.hardware.display.panel@1.0.so
 vendor/lib64/libgf_hal.so;DISABLE_CHECKELF
@@ -1249,6 +1253,8 @@ vendor/etc/init/init.cccifsd.rc
 vendor/etc/init/init.cccimdinit.rc
 vendor/etc/init/init.cccirpcd.rc
 vendor/etc/init/tetheroffloadservice.rc
+vendor/etc/init/rcs_volte_stack.rc
+vendor/etc/init/volte_rcs_ua.rc
 vendor/etc/init/ipsec_mon.rc
 vendor/etc/init/mtkrild.rc
 vendor/etc/init/muxreport.rc
@@ -1465,6 +1471,7 @@ vendor/lib64/vendor.trustonic.tee@1.0.so
 vendor/lib64/vendor.trustonic.tee@1.1.so
 
 # VPU
+vendor/lib64/libmvpu_config_data.so
 vendor/lib64/libmvpu_cic_ci_compiler.so
 vendor/lib64/libmvpu_clc_cl_compiler.so
 vendor/lib64/libmvpu_clc_mvpu_debuginfo.so
