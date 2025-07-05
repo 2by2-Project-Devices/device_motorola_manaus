@@ -132,6 +132,9 @@ ro.vendor.pq.mtk_video_transition=0
 drm.service.enabled=true
 ro.vendor.mtk_widevine_drm_l1_support=1
 
+# FUSE passthrough
+persist.sys.fuse.passthrough.enable=true
+
 # GPS
 ro.vendor.gps.chrdev=gps_drv_stp
 ro.vendor.mtk_agps_app=1
