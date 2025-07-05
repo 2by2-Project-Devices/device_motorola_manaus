@@ -897,7 +897,6 @@ vendor/etc/gnss/agps_profiles_conf2.xml
 
 # Graphics
 vendor/bin/hw/mt6879/android.hardware.graphics.allocator@4.0-service-mediatek.mt6879;SYMLINK=vendor/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek
-vendor/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc
 vendor/etc/meow.cfg
 vendor/etc/vintf/manifest/manifest_hwcomposer.xml
 vendor/lib/egl/egl.cfg
