@@ -130,6 +130,10 @@ TARGET_VENDOR_PROP += $(DEVICE_PATH)/props/vendor.prop
 # RIL
 ENABLE_VENDOR_RIL_SERVICE := true
 
+# Security patch level
+BOOT_SECURITY_PATCH := 2025-06-01
+VENDOR_SECURITY_PATCH := $(BOOT_SECURITY_PATCH)
+
 # SKU
 ODM_MANIFEST_SKUS += be de bn dn
 ODM_MANIFEST_BE_FILES := $(DEVICE_PATH)/configs/sku/manifest_de.xml
