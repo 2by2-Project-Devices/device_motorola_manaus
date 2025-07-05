@@ -372,13 +372,13 @@
       "PowerHint": "GAME",
       "Node": "CPULittleClusterMinFreq",
       "Duration": 0,
-      "Value": "9999999"
+      "Value": "1600000"
     },
     {
       "PowerHint": "GAME",
       "Node": "CPUBigClusterMinFreq",
       "Duration": 0,
-      "Value": "9999999"
+      "Value": "1550000"
     },
     {
       "PowerHint": "GAME",
@@ -409,12 +409,6 @@
       "Node": "GPUSchedPeriod",
       "Duration": 0,
       "Value": "50"
-    },
-    {
-      "PowerHint": "GAME",
-      "Node": "FGUclampMin",
-      "Duration": 0,
-      "Value": "10"
     },
     {
       "PowerHint": "GAME",
