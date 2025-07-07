@@ -1061,6 +1061,10 @@ service factory_no_image /vendor/bin/factory
     disabled
     oneshot
 
+# Restart C2 service after boot completed
+on property:sys.boot_completed=1
+    restart android-hardware-media-c2-hal-1-2
+
 # start meta_tst for ATM
 on property:sys.boot_completed=1 && property:ro.boot.atm=enable
     start meta_tst
