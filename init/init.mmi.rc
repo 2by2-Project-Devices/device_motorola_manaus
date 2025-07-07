@@ -291,3 +291,7 @@ on shutdown
 on property:sys.rkp.enable=* && property:sys.boot_completed=1
     setprop persist.vendor.moto.rkp.enable ${sys.rkp.enable}
     start vendor.mbm_spy
+
+# IKSWU-165346: Force shutter tone on Korea carriers
+on property:ro.carrier=retkr
+    setprop audio.camerasound.force true
