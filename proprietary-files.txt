@@ -201,12 +201,11 @@ vendor/firmware/BT_FW.cfg
 vendor/firmware/soc7_0_ram_bt_1_1_hdr.bin
 vendor/firmware/soc7_0_ram_bt_1a_1_hdr.bin
 vendor/firmware/soc7_0_ram_bt_1b_1_hdr.bin
+vendor/lib64/libbluetooth_hw_test.so
+vendor/lib64/libbluetooth_relayer.so
+vendor/lib64/libbluetoothem_mtk.so
 vendor/lib64/libbluetooth_mtk.so
 vendor/lib64/libbt-vendor.so
-
-# Bluetooth (A2DP)
-vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.1.so
-vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.2.so
 
 # Camera
 vendor/bin/hw/mt6879/camerahalserver;SYMLINK=vendor/bin/hw/camerahalserver
@@ -244,7 +243,7 @@ vendor/lib64/liboem_specific.so
 vendor/lib64/libscltm.so
 vendor/lib64/libstfactory-vendor.so
 vendor/lib64/libc++_shared.so
-vendor/lib64/libancbase_rt_fusion.so:vendor/lib64/libancbase.so
+vendor/lib64/libancbase_rt_fusion.so:vendor/lib64/libancbase.so;FIX_SONAME
 vendor/lib64/ls_nq_client.so
 vendor/lib64/se_extn_client.so
 vendor/lib64/hw/mt6879/vendor.mediatek.hardware.camera.bgservice@1.1-impl.so;SYMLINK=vendor/lib64/hw/vendor.mediatek.hardware.camera.bgservice@1.1-impl.so
@@ -831,6 +830,7 @@ vendor/lib64/hw/fingerprint.goodix.default.so
 vendor/lib64/com.motorola.hardware.display.panel@1.0.so
 vendor/lib64/libgf_hal.so;DISABLE_CHECKELF
 vendor/lib64/com.motorola.hardware.biometric.fingerprint@1.1.so
+vendor/lib64/com.motorola.hardware.display.panel@1.1.so
 vendor/lib64/vendor.goodix.hardware.biometrics.fingerprint@2.1.so
 vendor/lib64/vendor.goodix.hardware.biometrics.fingerprint@2.1_vendor.so
 
@@ -973,6 +973,7 @@ vendor/etc/vintf/manifest/android.hardware.neuralnetworks-shim-service-mtk.xml
 vendor/etc/vintf/manifest/manifest_apuware_apusys.xml
 vendor/etc/vintf/manifest/manifest_apuware_hmp.xml
 vendor/etc/vintf/manifest/manifest_apuware_utils.xml
+vendor/etc/vintf/manifest/vendor.mediatek.hardware.neuropilot.agent@1.0-service.xml
 vendor/etc/nnapi_powerhal.json
 vendor/lib/mt6879/libneuralnetworks_sl_driver_mtk_prebuilt.so;DISABLE_CHECKELF;SYMLINK=vendor/lib/libneuralnetworks_sl_driver_mtk_prebuilt.so
 vendor/lib/mt6879/libneuron_adapter_mgvi.so;DISABLE_CHECKELF;SYMLINK=vendor/lib/libneuron_adapter_mgvi.so
@@ -1321,6 +1322,7 @@ vendor/lib64/libcapctrl.so
 vendor/lib64/libcares_naptr.so
 vendor/lib64/libcarrierconfig.so
 vendor/lib64/libccci_util.so
+vendor/lib64/libforkexecwrap.so
 vendor/lib64/libgwsd-ril.so
 vendor/lib64/libgwsdv2-ril.so
 vendor/lib64/libgwsdv3-ril.so
@@ -1354,6 +1356,7 @@ vendor/lib64/libviamipc-ril.so
 vendor/lib64/libwpfa.so
 vendor/lib64/motrilutils.so
 vendor/lib64/nwk_opt_imp.so
+vendor/lib64/vendor.mediatek.hardware.netdagent@1.0.so
 vendor/lib64/vendor.mediatek.hardware.mdmonitor@1.0.so
 vendor/lib64/vendor.mediatek.hardware.mtkradioex@2.0.so
 vendor/lib64/vendor.mediatek.hardware.mtkradioex@3.0.so
