@@ -22,6 +22,7 @@ cc_binary {
         "vendor.egistec.hardware.fingerprint@4.0",
         "android.hardware.power-V1-ndk",
         "pixel-power-ext-V1-ndk",
+        "com.motorola.hardware.biometric.fingerprint@1.0",
     ],
     header_libs: ["generated_kernel_headers"]
 }

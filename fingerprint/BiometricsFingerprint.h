@@ -18,6 +18,7 @@
 #define ANDROID_HARDWARE_BIOMETRICS_FINGERPRINT_V2_3_BIOMETRICSFINGERPRINT_H
 
 #include <android/hardware/biometrics/fingerprint/2.3/IBiometricsFingerprint.h>
+#include <com/motorola/hardware/biometric/fingerprint/1.0/IMotoFingerPrint.h>
 #include <vendor/egistec/hardware/fingerprint/4.0/IBiometricsFingerprintRbs.h>
 #include <hidl/MQDescriptor.h>
 #include <hidl/Status.h>
@@ -41,6 +42,9 @@ using ::android::hardware::Return;
 using ::android::hardware::Void;
 using ::android::sp;
 using ::vendor::egistec::hardware::fingerprint::V4_0::IBiometricsFingerprintRbs;
+using ::com::motorola::hardware::biometric::fingerprint::V1_0::IMotFodEventResult;
+using ::com::motorola::hardware::biometric::fingerprint::V1_0::IMotFodEventType;
+using ::com::motorola::hardware::biometric::fingerprint::V1_0::IMotoFingerPrint;
 
 struct BiometricsFingerprint : public IBiometricsFingerprint {
     BiometricsFingerprint();
@@ -66,6 +70,7 @@ private:
     sp<IBiometricsFingerprint_2_1> biometrics_2_1_service;
     sp<IBiometricsFingerprintRbs> rbs_4_0_service;
     BiometricsPerf *mPerf;
+    sp<IMotoFingerPrint> mMotoFingerprint;
 };
 
 }  // namespace implementation

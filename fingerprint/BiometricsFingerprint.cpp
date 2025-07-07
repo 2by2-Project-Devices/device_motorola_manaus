@@ -34,6 +34,9 @@
 
 #include <drm/mediatek_drm.h>
 
+#define NOTIFY_FINGER_UP IMotFodEventType::FINGER_UP
+#define NOTIFY_FINGER_DOWN IMotFodEventType::FINGER_DOWN
+
 enum HBM_STATE {
     OFF = 0,
     ON = 2
@@ -71,6 +74,7 @@ namespace implementation {
 
 BiometricsFingerprint::BiometricsFingerprint() {
     biometrics_2_1_service = IBiometricsFingerprint_2_1::getService();
+    mMotoFingerprint = IMotoFingerPrint::getService();
     rbs_4_0_service = IBiometricsFingerprintRbs::getService();
     mPerf = new BiometricsPerf();
 }
@@ -96,7 +100,7 @@ Return<uint64_t> BiometricsFingerprint::getAuthenticatorId() {
 }
 
 Return<RequestStatus> BiometricsFingerprint::cancel() {
-    setHbmState(OFF);
+    BiometricsFingerprint::onFingerUp();
     return biometrics_2_1_service->cancel();
 }
 
@@ -125,6 +129,9 @@ Return<void> BiometricsFingerprint::onFingerDown(uint32_t, uint32_t, float, floa
     mPerf->enableBoost();
     setHbmState(ON);
 
+    mMotoFingerprint->sendFodEvent(NOTIFY_FINGER_DOWN, {},
+                                   [](IMotFodEventResult, const hidl_vec<signed char> &) {});
+
     std::thread([this]() {
         std::this_thread::sleep_for(std::chrono::milliseconds(300));
         BiometricsFingerprint::onFingerUp();
@@ -135,6 +142,10 @@ Return<void> BiometricsFingerprint::onFingerDown(uint32_t, uint32_t, float, floa
 
 Return<void> BiometricsFingerprint::onFingerUp() {
     setHbmState(OFF);
+
+    mMotoFingerprint->sendFodEvent(NOTIFY_FINGER_UP, {},
+                                   [](IMotFodEventResult, const hidl_vec<signed char> &) {});
+
     return Void();
 }
 
