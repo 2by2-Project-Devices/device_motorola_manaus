@@ -165,7 +165,7 @@ service vendor.mmi-shutdown-sh /vendor/bin/init.mmi.shutdown.sh
     disabled
 
 service vendor.hal-fps-sh /vendor/bin/init.oem.fingerprint2.sh
-    class late_start
+    class main
     user root
     group system
     oneshot
