@@ -243,7 +243,7 @@ vendor/lib64/liboem_specific.so
 vendor/lib64/libscltm.so
 vendor/lib64/libstfactory-vendor.so
 vendor/lib64/libc++_shared.so
-vendor/lib64/libancbase_rt_fusion.so:vendor/lib64/libancbase.so;FIX_SONAME
+vendor/lib64/libancbase_rt_fusion.so:vendor/lib64/libancbase.so
 vendor/lib64/ls_nq_client.so
 vendor/lib64/se_extn_client.so
 vendor/lib64/hw/mt6879/vendor.mediatek.hardware.camera.bgservice@1.1-impl.so;SYMLINK=vendor/lib64/hw/vendor.mediatek.hardware.camera.bgservice@1.1-impl.so
