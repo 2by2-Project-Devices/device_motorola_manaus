@@ -124,7 +124,6 @@ Return<bool> BiometricsFingerprint::isUdfps(uint32_t) {
 Return<void> BiometricsFingerprint::onFingerDown(uint32_t, uint32_t, float, float) {
     mPerf->enableBoost();
     setHbmState(ON);
-    extraApiWrapper(101);
 
     std::thread([this]() {
         std::this_thread::sleep_for(std::chrono::milliseconds(300));
@@ -136,7 +135,6 @@ Return<void> BiometricsFingerprint::onFingerDown(uint32_t, uint32_t, float, floa
 
 Return<void> BiometricsFingerprint::onFingerUp() {
     setHbmState(OFF);
-    extraApiWrapper(102);
     return Void();
 }
 
