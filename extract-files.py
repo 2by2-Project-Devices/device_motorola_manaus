@@ -89,6 +89,12 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libutils-v32.so'),
     'system_ext/lib64/libimsma.so': blob_fixup()
         .replace_needed('libsink.so', 'libsink-mtk.so'),
+    'vendor/etc/libnfc-nxp_220.conf': blob_fixup()
+        .regex_replace('DEFAULT_ISODEP_ROUTE=0x01', 'DEFAULT_ISODEP_ROUTE=0xC0')
+        .regex_replace('DEFAULT_SYS_CODE_ROUTE=0x01', 'DEFAULT_SYS_CODE_ROUTE=0xC0')
+        .regex_replace('DEFAULT_OFFHOST_ROUTE=0x01', 'DEFAULT_OFFHOST_ROUTE=0xC0')
+        .regex_replace('OFFHOST_ROUTE_ESE={01}', 'OFFHOST_ROUTE_ESE={C0}')
+        .add_line_if_missing('DEFAULT_NFCF_ROUTE=0xC0'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
