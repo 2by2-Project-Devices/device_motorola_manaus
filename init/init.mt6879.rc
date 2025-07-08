@@ -13,8 +13,8 @@ on early-init
 
     # initialize vendor.all.modules.ready to 1 here to prevent NOT GKI project blocked
     setprop vendor.all.modules.ready 1
-    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor performance
-    write /sys/devices/system/cpu/cpu6/cpufreq/scaling_governor performance
+    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor sugov_ext
+    write /sys/devices/system/cpu/cpu6/cpufreq/scaling_governor sugov_ext
 
 # Keep debugfs mounted in non-user builds
 on early-init && property:ro.build.type=eng
