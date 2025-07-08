@@ -75,7 +75,6 @@ namespace implementation {
 BiometricsFingerprint::BiometricsFingerprint() {
     biometrics_2_1_service = IBiometricsFingerprint_2_1::getService();
     mMotoFingerprint = IMotoFingerPrint::getService();
-    rbs_4_0_service = IBiometricsFingerprintRbs::getService();
     mPerf = new BiometricsPerf();
 }
 
@@ -145,21 +144,6 @@ Return<void> BiometricsFingerprint::onFingerUp() {
 
     mMotoFingerprint->sendFodEvent(NOTIFY_FINGER_UP, {},
                                    [](IMotFodEventResult, const hidl_vec<signed char> &) {});
-
-    return Void();
-}
-
-Return<void> BiometricsFingerprint::extraApiWrapper(int cidValue) {
-    int cid[1] = {cidValue};
-
-    // Create a std::vector<uint8_t> to store the data from 'cid'
-    std::vector<uint8_t> cid_data(reinterpret_cast<uint8_t*>(cid), reinterpret_cast<uint8_t*>(cid) + sizeof(cid));
-
-    // Create the hidl_vec<uint8_t> from the std::vector<uint8_t>
-    ::android::hardware::hidl_vec<uint8_t> hidl_cid = cid_data;
-
-    // Call extra_api with the correct input buffer and an empty lambda callback
-    rbs_4_0_service->extra_api(7, hidl_cid, [](const ::android::hardware::hidl_vec<uint8_t>&){});
 
     return Void();
 }
