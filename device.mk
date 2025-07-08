@@ -278,6 +278,9 @@ PRODUCT_PACKAGES += \
     EuiccOverlay \
     TelephonyOverlayManaus
 
+PRODUCT_PACKAGES += \
+    RegulatoryOverlayXT2307-3
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service.pixel-libperfmgr \
