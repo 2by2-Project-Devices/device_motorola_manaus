@@ -5,7 +5,7 @@
 
 
 runtime_resource_overlay {
-    name: "SystenUIOverlayManaus",
+    name: "SystemUIOverlayManaus",
     resource_dirs: ["res"],
     vendor: true,
 }
