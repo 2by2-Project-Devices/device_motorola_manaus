@@ -2,14 +2,6 @@
 ## are from edge 40 neo (15 V1TM35H.3-45 2e811)).
 ## variant: RETAIL
 
-# AEE
-vendor/lib/libaedv.so
-vendor/lib/libladder.so
-vendor/lib/libudf.so
-vendor/lib64/libaedv.so
-vendor/lib64/libladder.so
-vendor/lib64/libudf.so
-
 # Audio
 vendor/etc/permissions/com.mediatek.hardware.vow_dsp.xml
 vendor/etc/AudioLog_dynamic.xml
