@@ -170,6 +170,7 @@ PRODUCT_COPY_FILES += \
 # Init
 PRODUCT_PACKAGES += \
     fstab.mt6879 \
+    fstab.zram \
     init.sku.rc \
     init.connectivity.rc \
     init.connectivity.common.rc \
@@ -185,6 +186,7 @@ PRODUCT_PACKAGES += \
     init.oem.hw.sh \
     init.project.rc \
     init.sensor_2_0.rc \
+    init.zram.rc \
     ueventd.mt6879.rc
 
 PRODUCT_COPY_FILES += \
