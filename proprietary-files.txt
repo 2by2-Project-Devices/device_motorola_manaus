@@ -680,6 +680,10 @@ vendor/firmware/remoteproc_scp
 vendor/lib/libconnfem.so
 vendor/lib64/libconnfem.so
 
+# Chipinfo
+vendor/bin/chipinfo
+vendor/etc/init/chipinfo_init.rc
+
 # Display
 vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service
 vendor/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc
