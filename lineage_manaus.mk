@@ -15,6 +15,7 @@ $(call inherit-product, device/motorola/manaus/device.mk)
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_BUILD_GAPPS := true
 
 PRODUCT_NAME := lineage_manaus
 PRODUCT_DEVICE := manaus
