@@ -239,6 +239,10 @@ PRODUCT_PACKAGES += \
     MotoActions \
     MotoCommonOverlay
 
+# Neural networks
+PRODUCT_PACKAGES += \
+    android.hardware.neuralnetworks@1.3.vendor
+
 # NFC
 PRODUCT_PACKAGES += \
     android.hardware.nfc-service.nxp \
