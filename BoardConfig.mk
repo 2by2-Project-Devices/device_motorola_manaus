@@ -181,3 +181,4 @@ WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 
 # Inherit the proprietary files
 include vendor/motorola/manaus/BoardConfigVendor.mk
+include hardware/motorola/dolby/BoardConfigVendor.mk
