@@ -1,0 +1,26 @@
+From 286a360754f645aa0c51fd16e67eb228d715f2b0 Mon Sep 17 00:00:00 2001
+From: Vachounet <vachounet@live.fr>
+Date: Sat, 25 Nov 2023 20:21:20 +0800
+Subject: [PATCH 1/6] ImsConfigImpl: Remove call to syncWfcMDN()
+
+Signed-off-by: betaxab <betaxab@gmail.com>
+---
+ .../com/mediatek/ims/config/internal/ImsConfigController.smali | 3 ---
+ 1 file changed, 3 deletions(-)
+
+diff --git a/smali/com/mediatek/ims/config/internal/ImsConfigController.smali b/smali/com/mediatek/ims/config/internal/ImsConfigController.smali
+index a94b044..bec4b00 100644
+--- a/smali/com/mediatek/ims/config/internal/ImsConfigController.smali
++++ b/smali/com/mediatek/ims/config/internal/ImsConfigController.smali
+@@ -148,8 +148,6 @@
+ .method static bridge synthetic -$$Nest$msyncWfcMDN(Lcom/mediatek/ims/config/internal/ImsConfigController;)V
+     .locals 0
+ 
+-    invoke-direct {p0}, Lcom/mediatek/ims/config/internal/ImsConfigController;->syncWfcMDN()V
+-
+     return-void
+ .end method
+ 
+-- 
+2.45.2
+
