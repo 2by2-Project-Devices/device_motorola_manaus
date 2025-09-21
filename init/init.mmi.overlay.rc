@@ -28,9 +28,6 @@ on post-fs-data
     mkdir /mnt/vendor/persist/goodix 0770 system vendor_fingerp
     mkdir /data/vendor/gf_data 0770 system system
 
-    # Add for OIS hall test result
-    mkdir /mnt/vendor/persist/camera/ois_hall 0770 vendor_tcmd camera
-
     # Required by touchRec for write the touch data
     mkdir /data/vendor/touchrec 0770 input input
     chown input input /data/vendor/touchrec/bootindex
@@ -42,9 +39,6 @@ on post-fs-data
     mkdir /data/vendor/camera_dump
     chown root camera /data/vendor/camera_dump
     chmod 0770 /data/vendor/camera_dump
-
-    # change camera sois save hall data
-    mkdir /mnt/vendor/persist/camera/ois_hall_data 0770 vendor_tcmd camera
 
 on post-fs
     # Sensors
@@ -178,20 +172,6 @@ on property:sys.boot_completed=1
     chmod 0644 /data/vendor/camera_dump/mot_ov50a_eeprom.bin
     chmod 0644 /data/vendor/camera_dump/mot_hi1336_eeprom.bin
     chmod 0644 /data/vendor/camera_dump/mot_ov32b_eeprom.bin
-
-# Batt_health init
-on post-fs-data
-    # for batt_health server
-    mkdir /mnt/vendor/persist/batt_health 0770 vendor_pwric vendor_pwric
-on property:sys.boot_completed=1 && property:ro.build.type=userdebug
-    start vendor.batt_health
-on charger && property:ro.build.type=userdebug
-    start vendor.batt_health
-service vendor.batt_health /vendor/bin/batt_health
-    class late_start
-    user vendor_pwric
-    group vendor_pwric cache net_admin log
-    disabled
 
 on moto-post-fs-data-fs-tune
     write /sys/block/${dev.mnt.dev.root}/queue/read_ahead_kb 2048

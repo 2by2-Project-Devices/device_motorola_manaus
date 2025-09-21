@@ -45,20 +45,8 @@ on property:sys.boot_completed=1 && property:ro.vendor.zram.product_swapon=""
     write /proc/sys/vm/swappiness 100
     setprop sys.sysctl.swappiness 100
 
-on post-fs
-    # for batt_health server
-    mkdir /mnt/vendor/persist/batt_health 0770 vendor_pwric vendor_pwric
-    restorecon_recursive /mnt/vendor/persist
-   # Set dm-verity property for dm-verified partitions
-    verity_update_state
-
 on post-fs-data
      setprop ro.vendor.build.fingerprint ${ro.product.vendor.brand}/${ro.product.vendor.name}/${ro.product.vendor.device}:${ro.vendor.build.version.release}/${ro.vendor.build.id}/${ro.vendor.build.version.incremental}:${ro.vendor.build.type}/${ro.vendor.build.tags}
-
-     # Setup folders for security
-     mkdir /mnt/vendor/persist/security 02770 drmrpc drmrpc
-     mkdir /data/vendor/dbvc 0750 vendor_tcmd shell
-     chown drmrpc vendor_tcmd /mnt/vendor/persist/security
 
      # Setup folder for native to transfer data to NativeDropBoxAgent
      mkdir /data/vendor/dropbox-add 0730 log diag
@@ -88,7 +76,6 @@ on post-fs-data
      mkdir /data/vendor/aplogd 0770 log log
 
     # Create directory used by power_supply_logger
-    mkdir /data/vendor/power_supply_logger 0750 vendor_pwric log
     # Create directory power_supply_logger used by memtest and batt_health
     mkdir /data/vendor_de/power_supply_logger 0770 root log
 

@@ -292,6 +292,9 @@ PRODUCT_COPY_FILES += \
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
+# Platform
+TARGET_BOARD_PLATFORM := mt6879
+
 # Radio
 PRODUCT_PACKAGES += \
     vendor_mdota_symlink

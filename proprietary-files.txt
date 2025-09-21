@@ -210,7 +210,6 @@ vendor/etc/init/motorola.hardware.camera.imgtuner.aidl-service.rc
 vendor/etc/tetras/portrait_repair_composite.model
 vendor/etc/vintf/manifest/motorola.hardware.camera.imgtuner.aidl.xml
 vendor/etc/vintf/manifest/manifest_cameraprovider.xml
-vendor/etc/vintf/framework_compatibility_matrix_imager_tuning.xml
 vendor/etc/default_pd_calibration.bin
 vendor/etc/dual_golden_wide.bin
 vendor/etc/bstai_hdr_manaus
@@ -814,7 +813,7 @@ product/priv-app/EuiccGoogle/EuiccGoogle.apk;PRESIGNED
 product/etc/felica/common.cfg
 product/etc/felica/mfm.cfg
 product/etc/felica/mfs.cfg
-product/priv-app/MobileFeliCaClient/MobileFeliCaClient.apk;PRESIGNED;SKIPAPKCHECKS
+product/priv-app/MobileFeliCaClient/MobileFeliCaClient.apk;PRESIGNED
 
 # Fingerprint
 vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-goodixservice
