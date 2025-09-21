@@ -281,6 +281,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     RegulatoryOverlayXT2307-3
 
+# Perf
+PERF_ANIM_OVERRIDE := true
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service.pixel-libperfmgr \
