@@ -43,7 +43,7 @@ TARGET_SCREEN_DENSITY := 400
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/hidl/manifest.xml
 DEVICE_MATRIX_FILE += $(DEVICE_PATH)/configs/hidl/compatibility_matrix.xml
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
-    vendor/yaap/config/device_framework_matrix.xml \
+    vendor/2by2/config/device_framework_matrix.xml \
     hardware/mediatek/vintf/mediatek_framework_compatibility_matrix.xml \
     $(DEVICE_PATH)/configs/hidl/framework_compatibility_matrix.xml
 
@@ -100,7 +100,7 @@ TARGET_NO_KERNEL_OVERRIDE := true
 TARGET_KERNEL_SOURCE := $(DEVICE_PATH)-kernel/headers/
 
 # Partitions
--include vendor/yaap/config/BoardConfigReservedSize.mk
+-include vendor/2by2/config/BoardConfigReservedSize.mk
 BOARD_FLASH_BLOCK_SIZE := 131072 # (BOARD_KERNEL_PAGESIZE * 64)
 BOARD_EROFS_PCLUSTER_SIZE := 262144
 BOARD_BOOTIMAGE_PARTITION_SIZE := 67108864

@@ -11,13 +11,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from device makefile.
 $(call inherit-product, device/motorola/manaus/device.mk)
 
-# Inherit some common lineageOS stuff.
-$(call inherit-product, vendor/yaap/config/common_full_phone.mk)
+# Inherit some common 2by2 stuff.
+$(call inherit-product, vendor/2by2/config/common_full_phone.mk)
 
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_BUILD_GAPPS := true
 
-PRODUCT_NAME := yaap_manaus
+CUSTOM_PROCESSOR_INFO := MediaTek Dimensity 7030
+
+PRODUCT_NAME := manaus
 PRODUCT_DEVICE := manaus
 PRODUCT_MANUFACTURER := Motorola
 PRODUCT_BRAND := motorola
